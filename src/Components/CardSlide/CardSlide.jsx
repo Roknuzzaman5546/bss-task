@@ -12,19 +12,21 @@ import "react-multi-carousel/lib/styles.css";
 
 const CardSlide = () => {
     return (
-        <div className='w-[98%] mx-auto mt-20 px-2'>
-            <div className=" w-full bg-[#ce8dff] flex justify-center items-center px-12 py-20 rounded-3xl mx-auto">
-                <div className=' w-[40%]'>
-                    <h2 className=' font-sans text-[33px] font-bold text-[#323232] w-[65%] text-justify'>alles om van je huis seen vrolijik thuis te maken</h2>
-                    <p className=' text-xs my-4 text-[#323232]'>van klurjki kaarsen lot beddengoed om  ub weg te <br /> dromen</p>
-                    <button className=' border-2 border-[#323232] text-[#323232] hover:text-[#fff] hover:bg-[#323232] font-semibold py-4 px-8 rounded-lg'>wontedek wonen & slapen</button>
-                </div>
-                <div className=' -mt-28 w-[65%]'>
-                    <img className=' rounded-lg' src={cardSlideImg} alt="" />
+        <div>
+            <div className='w-[98%] mx-auto mt-20 px-2'>
+                <div className=" w-full bg-[#ce8dff] flex justify-center px-12 py-36 rounded-3xl mx-auto">
+                    <div className=' w-[40%] -mt-16'>
+                        <h2 className=' font-sans text-[33px] font-bold text-[#323232] w-[65%] text-justify'>alles om van je huis seen vrolijik thuis te maken</h2>
+                        <p className=' text-xs my-4 text-[#323232]'>van klurjki kaarsen lot beddengoed om  ub weg te <br /> dromen</p>
+                        <button className=' border-2 border-[#323232] text-[#323232] hover:text-[#fff] hover:bg-[#323232] font-semibold py-3 px-8 rounded-lg'>wontedek wonen & slapen</button>
+                    </div>
+                    <div className=' -mt-48 w-[65%]'>
+                        <img className=' rounded-lg' src={cardSlideImg} alt="" />
+                    </div>
                 </div>
             </div>
             {/* carosul part */}
-            <div>
+            <div className=' -mt-24 md:max-w-screen-2xl w-11/12 mx-auto px-2'>
                 <Carousel
                     additionalTransfrom={0}
                     arrows
@@ -49,7 +51,7 @@ const CardSlide = () => {
                                 max: 3000,
                                 min: 1024
                             },
-                            items: 8,
+                            items: 4,
                             partialVisibilityGutter: 40
                         },
                         mobile: {
@@ -57,7 +59,7 @@ const CardSlide = () => {
                                 max: 464,
                                 min: 0
                             },
-                            items: 5,
+                            items: 1.5,
                             partialVisibilityGutter: 30
                         },
                         tablet: {
@@ -154,8 +156,8 @@ const CustomRightArrow = ({ onClick }) => {
 const arrowStyles = {
     left: {
         position: 'absolute',
-        top: '40%',
-        left: '2px',
+        top: '50%',
+        left: '-5px',
         transform: 'translateY(-50%)',
         backgroundColor: '#fff',
         border: '1px solid #dfdfdf',
@@ -168,8 +170,8 @@ const arrowStyles = {
     },
     right: {
         position: 'absolute',
-        top: '40%',
-        right: '2px',
+        top: '50%',
+        right: '-8px',
         transform: 'translateY(-50%)',
         backgroundColor: '#fff',
         border: '1px solid #dfdfdf',

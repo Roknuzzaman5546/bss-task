@@ -2,7 +2,7 @@
 const CardStyles = ({ image }) => {
     return (
         <div>
-            <img src={image} alt="" />
+            <img className=" rounded-lg" height={367} width={292} src={image} alt="" />
         </div>
     )
 }
