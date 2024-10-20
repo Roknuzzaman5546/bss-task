@@ -13,14 +13,14 @@ import "react-multi-carousel/lib/styles.css";
 const CardSlide = () => {
     return (
         <div>
-            <div className='w-[98%] mx-auto mt-20 px-2'>
-                <div className=" w-full bg-[#ce8dff] flex justify-center px-12 py-36 rounded-3xl mx-auto">
+            <div className='w-[98%] bg-[#ce8dff]  rounded-3xl mx-auto mt-24 px-2'>
+                <div className=" md:max-w-screen-2xl w-11/12 flex justify-center xl:py-36 lg:py-28 md:py-24 py-24 mx-auto">
                     <div className=' w-[40%] -mt-16'>
-                        <h2 className=' font-sans text-[33px] font-bold text-[#323232] w-[65%] text-justify'>alles om van je huis seen vrolijik thuis te maken</h2>
+                        <h2 className=' font-sans text-[33px] font-bold text-[#323232] xl:w-[65%] lg:w-[80%] md:w-[50%] w-[40% ] text-justify'>alles om van je huis seen vrolijik thuis te maken</h2>
                         <p className=' text-xs my-4 text-[#323232]'>van klurjki kaarsen lot beddengoed om  ub weg te <br /> dromen</p>
                         <button className=' border-2 border-[#323232] text-[#323232] hover:text-[#fff] hover:bg-[#323232] font-semibold py-3 px-8 rounded-lg'>wontedek wonen & slapen</button>
                     </div>
-                    <div className=' -mt-48 w-[65%]'>
+                    <div className=' xl:-mt-48 lg:-mt-36 md:-mt-32 -mt-28 w-[65%]'>
                         <img className=' rounded-lg' src={cardSlideImg} alt="" />
                     </div>
                 </div>

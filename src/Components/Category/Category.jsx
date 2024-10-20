@@ -35,27 +35,35 @@ const Category = () => {
                     responsive={{
                         desktop: {
                             breakpoint: {
-                                max: 3000,
-                                min: 1024
+                                max: 3000, // for large desktop devices
+                                min: 1440 // or whatever large desktop starts at
                             },
                             items: 8,
                             partialVisibilityGutter: 40
                         },
-                        mobile: {
+                        laptop: {
                             breakpoint: {
-                                max: 464,
-                                min: 0
+                                max: 1440, // for laptop
+                                min: 1024
                             },
-                            items: 5,
+                            items: 7,
                             partialVisibilityGutter: 30
                         },
                         tablet: {
                             breakpoint: {
-                                max: 1024,
-                                min: 464
+                                max: 1024, // for tablet
+                                min: 700
                             },
-                            items: 2,
+                            items: 5,
                             partialVisibilityGutter: 30
+                        },
+                        mobile: {
+                            breakpoint: {
+                                max: 700, // for mobile
+                                min: 0
+                            },
+                            items: 3.5, // for 3.5 items visible
+                            partialVisibilityGutter: 20
                         }
                     }}
                     rewind={false}
@@ -64,7 +72,7 @@ const Category = () => {
                     shouldResetAutoplay
                     showDots={false}
                     sliderClass=""
-                    slidesToSlide={3}
+                    slidesToSlide={7}
                     swipeable
 
                     customLeftArrow={<CustomLeftArrow />}
