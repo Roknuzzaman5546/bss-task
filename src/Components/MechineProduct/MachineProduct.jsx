@@ -1,4 +1,6 @@
-import cardSlideImg from '../../assets/cardSlide/cardSlideBanner.png'
+import Carousel from "react-multi-carousel";
+import CardStyles from "../CardSlide/CardStyles";
+import "react-multi-carousel/lib/styles.css";
 import cardcarosulImg from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-beddengoed.webp'
 import cardcarosulImg1 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-bedtextiel 1.webp'
 import cardcarosulImg2 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-bloempottenvaasjes.webp'
@@ -7,26 +9,24 @@ import cardcarosulImg4 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel
 import cardcarosulImg5 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-servies.webp'
 import cardcarosulImg6 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-warmtekussens-kruik.webp'
 import cardcarosulImg7 from '../../assets/cardSlide/HEMA-2024-promoslider-600x750-wk41-42-woonacces1.webp'
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
 
-const CardSlide = () => {
+const MachineProduct = () => {
     return (
         <div>
-            <div className='xl:max-w-screen-2xl lg:w-[100%] md:w-[100%] w-[100%] bg-[#ce8dff]  rounded-3xl mx-auto mt-24 px-2'>
-                <div className=" md:max-w-screen-2xl w-11/12 flex justify-center xl:py-36 lg:py-28 md:py-24 py-24 mx-auto">
-                    <div className=' w-[40%] -mt-16'>
-                        <h2 className=' font-sans text-[33px] font-bold text-[#323232] xl:w-[65%] lg:w-[80%] md:w-[50%] w-[40% ] text-justify'>alles om van je huis seen vrolijik thuis te maken</h2>
-                        <p className=' text-xs my-4 text-[#323232]'>van klurjki kaarsen lot beddengoed om  ub weg te <br /> dromen</p>
-                        <button className=' border-2 border-[#323232] text-[#323232] hover:text-[#fff] hover:bg-[#323232] font-semibold py-3 px-8 rounded-lg'>wontedek wonen & slapen</button>
+            <div className='xl:max-w-screen-2xl lg:w-[100%] md:w-[100%] w-[100%] bg-[#9c1aff] rounded-3xl mx-auto mt-24 px-2'>
+                <div className=" md:max-w-screen-2xl w-11/12 flex justify-between items-center xl:pb-28 lg:pb-20 md:pb-20 pb-20 pt-14 mx-auto">
+                    <div>
+                        <h2 className=' font-sans text-[30px] font-bold text-[#ffff] text-justify'>Ontdek onze vriendenprijsjes</h2>
+                        <p className=' text-xs my-4 text-[#ffff]'>HEMA biedt veel, maar neilt alles ontvang de deste deels beaz onze behaviour bedrijiven</p>
                     </div>
-                    <div className=' xl:-mt-48 lg:-mt-36 md:-mt-32 -mt-28 w-[65%]'>
-                        <img className=' rounded-lg' src={cardSlideImg} alt="" />
+                    <div className=" flex justify-center items-center gap-2 font-sans">
+                        <a className="hover:border-b border-white overflow-hidden text-xs text-white font-semibold cursor-pointer">bekijk alles</a>
+                        <IoArrowForward className=" text-white"></IoArrowForward>
                     </div>
                 </div>
             </div>
             {/* carosul part */}
-            <div className=' -mt-24 md:max-w-screen-2xl w-11/12 mx-auto px-2'>
+            <div className=' -mt-20 md:max-w-screen-2xl w-11/12 mx-auto px-2'>
                 <Carousel
                     additionalTransfrom={0}
                     arrows
@@ -127,10 +127,10 @@ const CardSlide = () => {
                 </Carousel>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default CardSlide;
+export default MachineProduct;
 
 const CustomLeftArrow = ({ onClick }) => {
     return (
@@ -141,8 +141,7 @@ const CustomLeftArrow = ({ onClick }) => {
 };
 
 import { IoMdArrowForward } from 'react-icons/io';
-import { IoArrowBack } from 'react-icons/io5';
-import CardStyles from './CardStyles';
+import { IoArrowBack, IoArrowForward } from 'react-icons/io5';
 const CustomRightArrow = ({ onClick }) => {
     return (
         <button onClick={onClick} style={arrowStyles.right}>
