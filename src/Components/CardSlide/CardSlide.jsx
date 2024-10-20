@@ -1,19 +1,30 @@
-import categoryImg1 from '../../assets/category/HEMA-2024-inspiratie-800x800-wk3738-jassen2.webp';
-import categoryImg2 from '../../assets/category/HEMA-2024-categoryslider-280x280-wk41-42-dbo-nieuw.webp';
-import categoryImg3 from '../../assets/category/HEMA-2024-categoryslider-280x280-wk3940-jongenmeisje.webp';
-import categoryImg4 from '../../assets/category/HEMA-2024-categoryslider-280x280-wk3738-dameskleding.webp';
-import categoryImg5 from '../../assets/category/HEMA-2024-categoryslider-280x280-wk3738-dameskleding.webp';
-import categoryImg6 from '../../assets/category/HEMA-2024-categoryslider-280x280-wk3738-dameskleding.webp';
-
+import cardSlideImg from '../../assets/cardSlide/cardSlideBanner.png'
+import cardcarosulImg from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-beddengoed.webp'
+import cardcarosulImg1 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-bedtextiel 1.webp'
+import cardcarosulImg2 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-bloempottenvaasjes.webp'
+import cardcarosulImg3 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-kaarsen.webp'
+import cardcarosulImg4 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-keukentextiel.webp'
+import cardcarosulImg5 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-servies.webp'
+import cardcarosulImg6 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-warmtekussens-kruik.webp'
+import cardcarosulImg7 from '../../assets/cardSlide/HEMA-2024-promoslider-600x750-wk41-42-woonacces1.webp'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-import WithStyles from './WithStyles';
-
-const Category = () => {
+const CardSlide = () => {
     return (
-        <div className='md:max-w-screen-2xl w-11/12 mx-auto mt-2.5 px-1 overflow-hidden'>
-            <div className=' mt-8'>
+        <div className='w-[98%] mx-auto mt-20 px-2'>
+            <div className=" w-full bg-[#ce8dff] flex justify-center items-center px-12 py-20 rounded-3xl mx-auto">
+                <div className=' w-[40%]'>
+                    <h2 className=' font-sans text-[33px] font-bold text-[#323232] w-[65%] text-justify'>alles om van je huis seen vrolijik thuis te maken</h2>
+                    <p className=' text-xs my-4 text-[#323232]'>van klurjki kaarsen lot beddengoed om  ub weg te <br /> dromen</p>
+                    <button className=' border-2 border-[#323232] text-[#323232] hover:text-[#fff] hover:bg-[#323232] font-semibold py-4 px-8 rounded-lg'>wontedek wonen & slapen</button>
+                </div>
+                <div className=' -mt-28 w-[65%]'>
+                    <img className=' rounded-lg' src={cardSlideImg} alt="" />
+                </div>
+            </div>
+            {/* carosul part */}
+            <div>
                 <Carousel
                     additionalTransfrom={0}
                     arrows
@@ -71,74 +82,53 @@ const Category = () => {
                     customRightArrow={<CustomRightArrow />}
                 >
                     <div className=' flex flex-col items-center justify-center'>
-                        <WithStyles
-                            image={categoryImg1}
+                        <CardStyles
+                            image={cardcarosulImg}
                         />
                         <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
-                        <WithStyles
-                            image={categoryImg2} />
+                        <CardStyles
+                            image={cardcarosulImg1} />
                         <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
-                        <WithStyles
-                            image={categoryImg3} />
+                        <CardStyles
+                            image={cardcarosulImg2} />
                         <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
-                        <WithStyles
-                            image={categoryImg4} />
+                        <CardStyles
+                            image={cardcarosulImg3} />
                         <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
-                        <WithStyles
-                            image={categoryImg5} />
+                        <CardStyles
+                            image={cardcarosulImg4} />
                         <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
-                        <WithStyles
-                            image={categoryImg6} />
+                        <CardStyles
+                            image={cardcarosulImg5} />
                         <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
-                        <WithStyles
-                            image={categoryImg1} />
+                        <CardStyles
+                            image={cardcarosulImg6} />
                         <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
-                        <WithStyles
-                            image={categoryImg2} />
-                        <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
-                    </div>
-                    <div className=' flex flex-col items-center justify-center'>
-                        <WithStyles
-                            image={categoryImg3} />
-                        <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
-                    </div>
-                    <div className=' flex flex-col items-center justify-center'>
-                        <WithStyles
-                            image={categoryImg4} />
-                        <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
-                    </div>
-                    <div className=' flex flex-col items-center justify-center'>
-                        <WithStyles
-                            image={categoryImg5} />
-                        <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
-                    </div>
-                    <div className=' flex flex-col items-center justify-center'>
-                        <WithStyles
-                            image={categoryImg6} />
+                        <CardStyles
+                            image={cardcarosulImg7} />
                         <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
                     </div>
                 </Carousel>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default Category;
-
+export default CardSlide;
 
 const CustomLeftArrow = ({ onClick }) => {
     return (
@@ -150,6 +140,7 @@ const CustomLeftArrow = ({ onClick }) => {
 
 import { IoMdArrowForward } from 'react-icons/io';
 import { IoArrowBack } from 'react-icons/io5';
+import CardStyles from './CardStyles';
 const CustomRightArrow = ({ onClick }) => {
     return (
         <button onClick={onClick} style={arrowStyles.right}>
