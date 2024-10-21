@@ -6,7 +6,6 @@ import cardcarosulImg3 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel
 import cardcarosulImg4 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-keukentextiel.webp'
 import cardcarosulImg5 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-servies.webp'
 import cardcarosulImg6 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-warmtekussens-kruik.webp'
-import cardcarosulImg7 from '../../assets/cardSlide/HEMA-2024-promoslider-600x750-wk41-42-woonacces1.webp'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -38,7 +37,7 @@ const CardSlide = () => {
                     draggable
                     focusOnSelect={false}
                     infinite={false}
-                    itemClass=""
+                    itemClass="px-3"
                     keyBoardControl
                     minimumTouchDrag={80}
                     pauseOnHover
@@ -86,42 +85,51 @@ const CardSlide = () => {
                     <div className=' flex flex-col items-center justify-center'>
                         <CardStyles
                             image={cardcarosulImg}
+                            boldText={'30%'}
+                            bodyText={'korting'}
                         />
                         <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
                         <CardStyles
+                            boldText={'1+1'}
+                            bodyText={'gratis'}
                             image={cardcarosulImg1} />
                         <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
                         <CardStyles
+                            boldText={'1+1'}
+                            bodyText={'gratis'}
                             image={cardcarosulImg2} />
                         <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
                         <CardStyles
+                            boldText={'30%'}
+                            bodyText={'korting'}
                             image={cardcarosulImg3} />
                         <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
                         <CardStyles
+                            boldText={'1+1'}
+                            bodyText={'korting'}
                             image={cardcarosulImg4} />
                         <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
                         <CardStyles
+                            boldText={'30%'}
+                            bodyText={'korting'}
                             image={cardcarosulImg5} />
                         <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
                         <CardStyles
+                            boldText={'30%'}
+                            bodyText={'korting'}
                             image={cardcarosulImg6} />
-                        <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
-                    </div>
-                    <div className=' flex flex-col items-center justify-center'>
-                        <CardStyles
-                            image={cardcarosulImg7} />
                         <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
                     </div>
                 </Carousel>
@@ -134,7 +142,7 @@ export default CardSlide;
 
 const CustomLeftArrow = ({ onClick }) => {
     return (
-        <button onClick={onClick} style={arrowStyles.left}>
+        <button onClick={onClick} style={arrowStyles.left} className=' absolute shadow-md'>
             <IoArrowBack className='transition-transform duration-500 ease-in-out hover:scale-110' />
         </button>
     );
@@ -145,7 +153,7 @@ import { IoArrowBack } from 'react-icons/io5';
 import CardStyles from './CardStyles';
 const CustomRightArrow = ({ onClick }) => {
     return (
-        <button onClick={onClick} style={arrowStyles.right}>
+        <button onClick={onClick} style={arrowStyles.right} className=' absolute shadow-md'>
             <IoMdArrowForward className='transition-transform duration-500 ease-in-out hover:scale-110' />
         </button>
     );
@@ -156,30 +164,28 @@ const CustomRightArrow = ({ onClick }) => {
 const arrowStyles = {
     left: {
         position: 'absolute',
-        top: '50%',
-        left: '-5px',
+        top: '40%',
+        left: '0',
         transform: 'translateY(-50%)',
         backgroundColor: '#fff',
         border: '1px solid #dfdfdf',
         borderRadius: '100%',
-        overflow: 'visible',
         padding: '17px',
-        boxShadow: '0px 8px 16px 0px rgba(50,50,50,0.16)',
         fontSize: '30px',
         cursor: 'pointer',
+        zIndex: 2,
     },
     right: {
         position: 'absolute',
-        top: '50%',
-        right: '-8px',
+        top: '40%',
+        right: '0',
         transform: 'translateY(-50%)',
         backgroundColor: '#fff',
         border: '1px solid #dfdfdf',
         borderRadius: '100%',
-        overflow: 'visible',
         padding: '17px',
-        boxShadow: '0px 8px 16px 0px rgba(50,50,50,0.16)',
-        fontSize: '30px', // Customize size
+        fontSize: '30px',
         cursor: 'pointer',
+        zIndex: 3,
     },
 };

@@ -1,5 +1,5 @@
-import Aanbieding from "../Components/aanbieding/Aanbieding";
 // import Bekijk from "../Components/Bekijk/Bekijk";
+import Aanbieding from "../Components/Aanbieding/Aanbieding";
 import CardSlide from "../Components/CardSlide/CardSlide";
 import Category from "../Components/Category/Category";
 import Feestdagen from "../Components/Feestdagen/Feestdagen";

@@ -25,7 +25,7 @@ const Category = () => {
                     draggable
                     focusOnSelect={false}
                     infinite={false}
-                    itemClass=""
+                    itemClass="px-3"
                     keyBoardControl
                     minimumTouchDrag={80}
                     pauseOnHover
@@ -172,7 +172,7 @@ const arrowStyles = {
     left: {
         position: 'absolute',
         top: '40%',
-        left: '0', // Move the left arrow to the very edge
+        left: '0', 
         transform: 'translateY(-50%)',
         backgroundColor: '#fff',
         border: '1px solid #dfdfdf',
@@ -180,12 +180,12 @@ const arrowStyles = {
         padding: '17px',
         fontSize: '30px',
         cursor: 'pointer',
-        zIndex: 2, // Ensure the left arrow is under the right arrow
+        zIndex: 2,
     },
     right: {
         position: 'absolute',
         top: '40%',
-        right: '0', // Overlap with the left arrow
+        right: '0', 
         transform: 'translateY(-50%)',
         backgroundColor: '#fff',
         border: '1px solid #dfdfdf',
@@ -193,6 +193,6 @@ const arrowStyles = {
         padding: '17px',
         fontSize: '30px',
         cursor: 'pointer',
-        zIndex: 3, // Ensure the right arrow is on top
+        zIndex: 3,
     },
 };

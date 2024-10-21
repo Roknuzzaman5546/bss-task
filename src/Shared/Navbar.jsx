@@ -55,12 +55,12 @@ const Navbar = () => {
                         <input type="text" name="" id="" placeholder='Waar be je naar op Zoak?' className=' rounded-3xl h-[44px] w-full outline-0 ring-0 bg-[#efefef] hover:bg-[#dfdfdf] py-3 px-6 placeholder:text-[#767676] transition-colors duration-700' />
                         <LuSearch className=' -ml-12 text-xl' />
                     </div>
-                    <div className=' flex items-center gap-3 '>
+                    <div className=' flex items-center gap-2 '>
                         <button className=' flex justify-center items-center gap-2 hover:bg-[#efefef] px-3 py-2 rounded-lg transition-colors duration-700'>
                             <FaRegUser className='text-[#323232]' />
                             <p className='  text-sm font-semibold text-[#323232]'>inloggen</p>
                         </button>
-                        <button className=' hover:bg-[#efefef] px-2.5 py-2.5 rounded-lg transition-colors duration-500'>
+                        <button className=' hover:bg-[#efefef] px-2 py-2 rounded-lg transition-colors duration-500'>
                             <img className=' h-5 w-5' src={love} alt="" />
                         </button>
                         <button className=' hover:bg-[#efefef] px-2 py-2.5 rounded-lg transition-colors duration-500'>
