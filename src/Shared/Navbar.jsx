@@ -27,7 +27,7 @@ const Navbar = () => {
     return (
         <div className=''>
             {/* Upper menu */}
-            <div className={`md:max-w-screen-2xl w-11/12 mx-auto flex justify-between items-center border-b border-[#f5f5f5] py-3 px-1`}>
+            <div className={`md:max-w-screen-2xl w-11/12 mx-auto flex justify-between items-center border-b border-[#f5f5f5] py-3.5 px-2 transition-all duration-300 ease-in-out`}>
                 <div className="flex justify-around items-center gap-6">
                     <a className="navAfter relative font-sans font-semibold text-xs cursor-pointer text-[#3a3a3a]">fotoservice</a>
                     <a className="navAfter relative font-sans font-semibold text-xs cursor-pointer text-[#3a3a3a]">tickets & deals</a>
@@ -41,7 +41,7 @@ const Navbar = () => {
                 </div>
             </div>
             {/* down menu */}
-            <div className={`bg-white top-0 z-20 py-4 px-1 ${isNavbarJumping ? "w-[100%] mx-auto fixed shadow-md" : ""}`}>
+            <div className={`bg-white top-0 z-20 py-4 px-1 ${isNavbarJumping ? "fixed w-full mx-auto shadow-md transition-all duration-500 ease-in-out" : "transition-all duration-300 ease-in-out"}`}>
                 <div className='flex justify-between items-center gap-5 md:max-w-screen-2xl w-11/12 mx-auto'>
                     <div className='flex items-center'>
                         <img src={logo} height={56} width={56} alt="" />

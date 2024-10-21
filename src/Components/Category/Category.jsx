@@ -12,8 +12,8 @@ import WithStyles from './WithStyles';
 
 const Category = () => {
     return (
-        <div className='md:max-w-screen-2xl w-11/12 mx-auto mt-2.5 px-1 overflow-hidden'>
-            <div className=' mt-8'>
+        <div className='md:max-w-screen-2xl w-11/12 mx-auto mt-0.5 px-1'>
+            <div className=' mt-7 overflow-visible'>
                 <Carousel
                     additionalTransfrom={0}
                     arrows
@@ -150,7 +150,7 @@ export default Category;
 
 const CustomLeftArrow = ({ onClick }) => {
     return (
-        <button onClick={onClick} style={arrowStyles.left}>
+        <button onClick={onClick} style={arrowStyles.left} className=' absolute shadow-md'>
             <IoArrowBack className='transition-transform duration-500 ease-in-out hover:scale-110' />
         </button>
     );
@@ -160,7 +160,7 @@ import { IoMdArrowForward } from 'react-icons/io';
 import { IoArrowBack } from 'react-icons/io5';
 const CustomRightArrow = ({ onClick }) => {
     return (
-        <button onClick={onClick} style={arrowStyles.right}>
+        <button onClick={onClick} style={arrowStyles.right} className=' absolute shadow-md'>
             <IoMdArrowForward className='transition-transform duration-500 ease-in-out hover:scale-110' />
         </button>
     );
@@ -172,29 +172,27 @@ const arrowStyles = {
     left: {
         position: 'absolute',
         top: '40%',
-        left: '2px',
+        left: '0', // Move the left arrow to the very edge
         transform: 'translateY(-50%)',
         backgroundColor: '#fff',
         border: '1px solid #dfdfdf',
         borderRadius: '100%',
-        overflow: 'visible',
         padding: '17px',
-        boxShadow: '0px 8px 16px 0px rgba(50,50,50,0.16)',
         fontSize: '30px',
         cursor: 'pointer',
+        zIndex: 2, // Ensure the left arrow is under the right arrow
     },
     right: {
         position: 'absolute',
         top: '40%',
-        right: '2px',
+        right: '0', // Overlap with the left arrow
         transform: 'translateY(-50%)',
         backgroundColor: '#fff',
         border: '1px solid #dfdfdf',
         borderRadius: '100%',
-        overflow: 'visible',
         padding: '17px',
-        boxShadow: '0px 8px 16px 0px rgba(50,50,50,0.16)',
-        fontSize: '30px', // Customize size
+        fontSize: '30px',
         cursor: 'pointer',
+        zIndex: 3, // Ensure the right arrow is on top
     },
 };
