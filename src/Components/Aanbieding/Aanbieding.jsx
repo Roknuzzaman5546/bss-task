@@ -1,11 +1,7 @@
-import cardcarosulImg from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-beddengoed.webp'
-import cardcarosulImg1 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-bedtextiel 1.webp'
-import cardcarosulImg2 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-bloempottenvaasjes.webp'
-import cardcarosulImg3 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-kaarsen.webp'
-import cardcarosulImg4 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-keukentextiel.webp'
-import cardcarosulImg5 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-servies.webp'
-import cardcarosulImg6 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-warmtekussens-kruik.webp'
-import cardcarosulImg7 from '../../assets/cardSlide/HEMA-2024-promoslider-600x750-wk41-42-woonacces1.webp'
+import cardcarosulImg from '../../assets/aanbieging/HEMA-2024-promoslider-600x750-wk43-44-wanddeco.webp'
+import cardcarosulImg1 from '../../assets/aanbieging/HEMA-2024-promoslider-600x750-wk43-44-fotocadeaus.webp'
+import cardcarosulImg2 from '../../assets/aanbieging/HEMA-2024-promoslider-600x750-wk43-44-fotoboeken.webp'
+import cardcarosulImg3 from '../../assets/aanbieging/HEMA-2024-promoslider-600x750-wk43-44-afdrukken.webp'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { IoArrowForward } from "react-icons/io5";
@@ -18,15 +14,14 @@ const Aanbieding = () => {
             {/* heading */}
             <div className=" flex justify-between items-center px-2">
                 <div>
-                    <h2 className=" font-sans font-bold text-2xl text-[#3a3a3a]">nu in de aanbieding</h2>
-                    <p className=" text-xs mt-2">geldig t/m 20 oktober</p>
+                    <h2 className=" font-sans font-bold text-3xl text-[#3a3a3a]">aanbiedingen bij HEMA fotoservice</h2>
                 </div>
                 <div className=" flex justify-center items-center gap-2 font-sans">
-                    <a className="navAfter relative text-xs font-semibold cursor-pointer">bekijk alles</a>
+                    <a className="hover:border-b-[1.5px] border-black text-xs font-semibold cursor-pointer md:flex hidden">bekijk alles</a>
                     <IoArrowForward></IoArrowForward>
                 </div>
             </div>
-            <div className=' mt-5'>
+            <div className=' mt-8'>
                 <Carousel
                     additionalTransfrom={0}
                     arrows
@@ -85,44 +80,32 @@ const Aanbieding = () => {
                 >
                     <div className=' flex flex-col items-center justify-center'>
                         <CardStyles
+                            boldText={'30%'}
+                            bodyText={'korting'}
+                            headline={'wanddecoratie'}
                             image={cardcarosulImg}
                         />
-                        <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
                         <CardStyles
+                            boldText={'30%'}
+                            bodyText={'korting'}
+                            headline={'fotocadeous'}
                             image={cardcarosulImg1} />
-                        <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
                         <CardStyles
+                            boldText={'30%'}
+                            bodyText={'korting'}
+                            headline={'fotoboeken'}
                             image={cardcarosulImg2} />
-                        <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
                         <CardStyles
+                            boldText={'30%'}
+                            bodyText={'korting'}
+                            headline={"foto's afdrukken"}
                             image={cardcarosulImg3} />
-                        <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
-                    </div>
-                    <div className=' flex flex-col items-center justify-center'>
-                        <CardStyles
-                            image={cardcarosulImg4} />
-                        <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
-                    </div>
-                    <div className=' flex flex-col items-center justify-center'>
-                        <CardStyles
-                            image={cardcarosulImg5} />
-                        <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
-                    </div>
-                    <div className=' flex flex-col items-center justify-center'>
-                        <CardStyles
-                            image={cardcarosulImg6} />
-                        <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
-                    </div>
-                    <div className=' flex flex-col items-center justify-center'>
-                        <CardStyles
-                            image={cardcarosulImg7} />
-                        <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
                     </div>
                 </Carousel>
             </div>
@@ -134,7 +117,7 @@ export default Aanbieding;
 
 const CustomLeftArrow = ({ onClick }) => {
     return (
-       <button onClick={onClick} style={arrowStyles.left} className=' absolute shadow-md'>
+        <button onClick={onClick} style={arrowStyles.left} className=' absolute shadow-md'>
             <IoArrowBack className='transition-transform duration-500 ease-in-out hover:scale-110' />
         </button>
     );
@@ -156,7 +139,7 @@ const arrowStyles = {
     left: {
         position: 'absolute',
         top: '40%',
-        left: '0', 
+        left: '0',
         transform: 'translateY(-50%)',
         backgroundColor: '#fff',
         border: '1px solid #dfdfdf',
@@ -169,7 +152,7 @@ const arrowStyles = {
     right: {
         position: 'absolute',
         top: '40%',
-        right: '0', 
+        right: '0',
         transform: 'translateY(-50%)',
         backgroundColor: '#fff',
         border: '1px solid #dfdfdf',

@@ -8,10 +8,10 @@ const CardStyles = ({ image, boldText, bodyText, headline, titleText }) => {
                     <p className=" font-sans font-semibold w-full text-white text-center flex flex-col justify-center items-center"><span className=" font-bold text-2xl">{boldText}</span>
                         <span className=" -mt-2">{bodyText}</span> </p>
                 </div>
-                <div>
-                    <h3 className="text-sm font-semibold text-center text-white">{headline ? headline : ''}</h3>
-                    <p className="text-xs text-gray-400">{titleText ? titleText : ''}</p>
-                </div>
+            </div>
+            <div className="pt-3">
+                <h3 className=" font-sans font-semibold">{headline ? headline : ''}</h3>
+                <p className=" font-sans leading-5 text-sm mt-1">{titleText ? titleText : ''}</p>
             </div>
         </div>
     )

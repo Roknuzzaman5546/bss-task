@@ -87,50 +87,57 @@ const CardSlide = () => {
                             image={cardcarosulImg}
                             boldText={'30%'}
                             bodyText={'korting'}
+                            headline={'badtextiel'}
+                            titleText={'in 14 kleuren'}
                         />
-                        <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
                         <CardStyles
                             boldText={'1+1'}
                             bodyText={'gratis'}
+                            headline={'thremo onderGoed'}
+                            titleText={'allie combinets zijn mogelijk'}
                             image={cardcarosulImg1} />
-                        <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
                         <CardStyles
                             boldText={'1+1'}
                             bodyText={'gratis'}
+                            headline={'dames basic-t-shirts'}
+                            titleText={'alle combinties zijn mogelijk'}
                             image={cardcarosulImg2} />
-                        <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
                         <CardStyles
                             boldText={'30%'}
                             bodyText={'korting'}
+                            headline={'kofibonen  1 kg'}
+                            titleText={'alle combinties zijn mogelijk'}
                             image={cardcarosulImg3} />
-                        <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
                         <CardStyles
                             boldText={'1+1'}
                             bodyText={'korting'}
+                            headline={'dameshmend'}
+                            titleText={'alle combinties zijn mogelijk'}
                             image={cardcarosulImg4} />
-                        <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
                         <CardStyles
                             boldText={'30%'}
                             bodyText={'korting'}
+                            headline={'damescoltruien'}
+                            titleText={'diverse kleuren, S t/m XL'}
                             image={cardcarosulImg5} />
-                        <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
                         <CardStyles
-                            boldText={'30%'}
                             bodyText={'korting'}
+                            boldText={'30%'}
+                            headline={'heren gebried mode'}
+                            titleText={'diverse shorten'}
                             image={cardcarosulImg6} />
-                        <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
                     </div>
                 </Carousel>
             </div>

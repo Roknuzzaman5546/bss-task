@@ -27,7 +27,7 @@ const Feestdagen = () => {
                     draggable
                     focusOnSelect={false}
                     infinite={false}
-                    itemClass="px-4"
+                    itemClass="px-2"
                     keyBoardControl
                     minimumTouchDrag={80}
                     pauseOnHover

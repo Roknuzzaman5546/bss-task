@@ -18,7 +18,7 @@ const Bekijk = () => {
                     <p className=" text-xs mt-2">wissel je punten in voor gratis producten</p>
                 </div>
                 <div className=" flex justify-center items-center gap-2 font-sans">
-                    <a className="navAfter relative text-xs font-semibold cursor-pointer">bekijk alles</a>
+                    <a className="navAfter relative text-xs font-semibold cursor-pointer md:flex hidden">bekijk alles</a>
                     <IoArrowForward></IoArrowForward>
                 </div>
             </div>

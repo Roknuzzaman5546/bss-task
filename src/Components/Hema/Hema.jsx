@@ -1,12 +1,19 @@
+import { IoMdArrowForward } from 'react-icons/io';
+import { IoArrowBack, IoArrowForward } from 'react-icons/io5';
+import HemaStyles from './HemaStyles'
 import Carousel from 'react-multi-carousel'
-import cardcarosulImg from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-beddengoed.webp'
-import cardcarosulImg1 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-bedtextiel 1.webp'
-import cardcarosulImg2 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-bloempottenvaasjes.webp'
-import cardcarosulImg3 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-kaarsen.webp'
-import cardcarosulImg4 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-keukentextiel.webp'
-import cardcarosulImg5 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-servies.webp'
-import cardcarosulImg6 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-warmtekussens-kruik.webp'
-import cardcarosulImg7 from '../../assets/cardSlide/HEMA-2024-promoslider-600x750-wk41-42-woonacces1.webp'
+import cardcarosulImg from '../../assets/hema/HEMA-2024-homepage-carrousel-600x750-wk41-hemapas-logo.webp'
+import cardcarosulImg1 from '../../assets/hema/HEMA-2024-promoslider-600x750-hemapas-vouchers-10pkorting-blauw-logo-NL.webp'
+import cardcarosulImg2 from '../../assets/hema/HEMA-2024-promoslider-600x750-wk40-hemapas-pinkribbon.webp'
+import cardcarosulImg3 from '../../assets/hema/HEMA-2024-promoslider-600x750-hemapas-vouchers-5ekorting-groen-logo-NL.webp'
+import cardcarosulImg4 from '../../assets/hema/HEMA-2024-promoslider-600x750-wk40-hemapas-watjes.webp'
+import cardcarosulImg5 from '../../assets/hema/HEMA-2024-promoslider-600x750-hemapas-vouchers-2ekorting-oranje-logo-NL.webp'
+import cardcarosulImg6 from '../../assets/hema/HEMA-2024-promoslider-600x750-wk40-hemapas-shopper.webp'
+import loveImg50 from '../../assets/hema/50.svg'
+import loveImg75 from '../../assets/hema/75.svg'
+import loveImg100 from '../../assets/hema/100.svg'
+import loveImg150 from '../../assets/hema/150.svg'
+import loveImg250 from '../../assets/hema/250.svg'
 
 const Hema = () => {
     return (
@@ -18,7 +25,7 @@ const Hema = () => {
                     <p className=" text-xs mt-2">wissel je punten in voor gratis producten</p>
                 </div>
                 <div className=" flex justify-center items-center gap-2 font-sans">
-                    <a className="navAfter relative text-xs font-semibold cursor-pointer">bekijk alles</a>
+                    <a className="navAfter relative text-xs font-semibold cursor-pointer md:flex hidden">bekijk alles</a>
                     <IoArrowForward></IoArrowForward>
                 </div>
             </div>
@@ -34,7 +41,7 @@ const Hema = () => {
                     draggable
                     focusOnSelect={false}
                     infinite={false}
-                    itemClass="px-3"
+                    itemClass="px-2.5"
                     keyBoardControl
                     minimumTouchDrag={80}
                     pauseOnHover
@@ -80,45 +87,47 @@ const Hema = () => {
                     customRightArrow={<CustomRightArrow />}
                 >
                     <div className=' flex flex-col items-center justify-center'>
-                        <CardStyles
+                        <HemaStyles
+                            loveImg={loveImg150}
                             image={cardcarosulImg}
+                            headline={'badtextiel'}
                         />
-                        <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
-                        <CardStyles
+                        <HemaStyles
+                            loveImg={loveImg100}
+                            headline={'thremo onderGoed'}
                             image={cardcarosulImg1} />
-                        <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
-                        <CardStyles
+                        <HemaStyles
+                            loveImg={loveImg50}
+                            headline={'dames basic-t-shirts'}
                             image={cardcarosulImg2} />
-                        <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
-                        <CardStyles
+                        <HemaStyles
+                            loveImg={loveImg75}
+                            headline={'kofibonen  1 kg'}
                             image={cardcarosulImg3} />
-                        <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
-                        <CardStyles
+                        <HemaStyles
+                            loveImg={loveImg50}
+                            headline={'dameshmend'}
                             image={cardcarosulImg4} />
-                        <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
-                        <CardStyles
+                        <HemaStyles
+                            loveImg={loveImg250}
+                            headline={'damescoltruien'}
                             image={cardcarosulImg5} />
-                        <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
-                        <CardStyles
+                        <HemaStyles
+                            loveImg={loveImg100}
+                            headline={'heren gebried mode'}
                             image={cardcarosulImg6} />
-                        <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
-                    </div>
-                    <div className=' flex flex-col items-center justify-center'>
-                        <CardStyles
-                            image={cardcarosulImg7} />
-                        <p className=' text-[#323232] text-xs font-sans font-semibold mt-4'>This is rokon</p>
                     </div>
                 </Carousel>
             </div>
@@ -127,12 +136,9 @@ const Hema = () => {
 };
 
 export default Hema;
-import { IoMdArrowForward } from 'react-icons/io';
-import { IoArrowBack, IoArrowForward } from 'react-icons/io5';
-import CardStyles from '../CardSlide/CardStyles'
 const CustomLeftArrow = ({ onClick }) => {
     return (
-       <button onClick={onClick} style={arrowStyles.left} className=' absolute shadow-md'>
+        <button onClick={onClick} style={arrowStyles.left} className=' absolute shadow-md'>
             <IoArrowBack className='transition-transform duration-500 ease-in-out hover:scale-110' />
         </button>
     );
@@ -151,7 +157,7 @@ const arrowStyles = {
     left: {
         position: 'absolute',
         top: '40%',
-        left: '0', 
+        left: '0',
         transform: 'translateY(-50%)',
         backgroundColor: '#fff',
         border: '1px solid #dfdfdf',
@@ -164,7 +170,7 @@ const arrowStyles = {
     right: {
         position: 'absolute',
         top: '40%',
-        right: '0', 
+        right: '0',
         transform: 'translateY(-50%)',
         backgroundColor: '#fff',
         border: '1px solid #dfdfdf',
