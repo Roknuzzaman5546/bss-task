@@ -14,7 +14,7 @@ const Bekijk = () => {
             {/* heading */}
             <div className=" flex justify-between items-center px-2">
                 <div>
-                    <h2 className=" font-sans font-bold text-2xl text-[#3a3a3a] text-ellipsis">spaar voor leuke extra's</h2>
+                    <h2 className=" font-sans font-bold text-2xl text-[#3a3a3a] text-ellipsis">spaar voor leuke {"extra's"}</h2>
                     <p className=" text-xs mt-2">wissel je punten in voor gratis producten</p>
                 </div>
                 <div className=" flex justify-center items-center gap-2 font-sans">
@@ -130,7 +130,7 @@ export default Bekijk;
 
 const CustomLeftArrow = ({ onClick }) => {
     return (
-       <button onClick={onClick} style={arrowStyles.left} className=' absolute shadow-md'>
+       <button onClick={onClick} style={arrowStyles.left} className=' absolute shadow-md md:block hidden'>
             <IoArrowBack className='transition-transform duration-500 ease-in-out hover:scale-110' />
         </button>
     );
@@ -141,7 +141,7 @@ import { IoArrowBack, IoArrowForward } from 'react-icons/io5';
 import CardStyles from '../CardSlide/CardStyles'
 const CustomRightArrow = ({ onClick }) => {
     return (
-        <button onClick={onClick} style={arrowStyles.right} className=' absolute shadow-md'>
+        <button onClick={onClick} style={arrowStyles.right} className=' absolute shadow-md md:block hidden'>
             <IoMdArrowForward className='transition-transform duration-500 ease-in-out hover:scale-110' />
         </button>
     );

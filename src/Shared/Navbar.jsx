@@ -101,8 +101,8 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className=' flex justify-center items-center w-[90%] pl-3'>
-                    <input type="text" name="" id="" placeholder='Waar be je naar op Zoak?' className=' rounded-3xl h-[44px] w-full outline-0 ring-0 bg-[#efefef] hover:bg-[#dfdfdf] py-3 px-6 placeholder:text-[#767676] transition-colors duration-700' />
-                    <LuSearch className=' -ml-12 text-xl' />
+                    <input type="text" name="" id="" placeholder='Waar be je naar op Zoak?' className=' rounded-3xl h-[44px] w-full outline-0 ring-0 bg-[#efefef] hover:bg-[#dfdfdf] py-3 px-6 placeholder:text-[#767676] placeholder:text-sm transition-colors duration-700' />
+                    <LuSearch className=' -ml-12 text-lg' />
                 </div>
             </div>
         </div>

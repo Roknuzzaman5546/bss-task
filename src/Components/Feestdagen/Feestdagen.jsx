@@ -99,7 +99,7 @@ export default Feestdagen;
 
 const CustomLeftArrow = ({ onClick }) => {
     return (
-       <button onClick={onClick} style={arrowStyles.left} className=' absolute shadow-md'>
+       <button onClick={onClick} style={arrowStyles.left} className=' absolute shadow-md md:block hidden'>
             <IoArrowBack className='transition-transform duration-500 ease-in-out hover:scale-110' />
         </button>
     );
@@ -109,7 +109,7 @@ import { IoMdArrowForward } from 'react-icons/io';
 import { IoArrowBack } from 'react-icons/io5';
 const CustomRightArrow = ({ onClick }) => {
     return (
-        <button onClick={onClick} style={arrowStyles.right} className=' absolute shadow-md'>
+        <button onClick={onClick} style={arrowStyles.right} className=' absolute shadow-md md:block hidden'>
             <IoMdArrowForward className='transition-transform duration-500 ease-in-out hover:scale-110' />
         </button>
     );
