@@ -7,6 +7,7 @@ import { HiOutlineBars3 } from 'react-icons/hi2';
 import { LuSearch } from 'react-icons/lu';
 import { IoIosArrowDown } from 'react-icons/io';
 import { useEffect, useState } from 'react';
+import { IoSearchSharp } from 'react-icons/io5';
 
 const Navbar = () => {
     const [isNavbarJumping, setIsNavbarJumping] = useState(false);
@@ -84,6 +85,9 @@ const Navbar = () => {
                             <img src={logo} height={50} width={50} alt="" />
                         </div>
                         <div className=' flex items-center gap-4'>
+                            <div className={`${isNavbarJumping ? " flex transition-all duration-500 ease-in-out" : " hidden transition-all duration-300 ease-in-out"}`}>
+                                <IoSearchSharp className=' text-[22px] font-bold text-[#323232]' />
+                            </div>
                             <button className=' flex justify-center items-center gap-2 hover:bg-[#efefef] px-2 py-2 rounded-lg transition-colors duration-700'>
                                 <FaRegUser className='text-[#323232] text-xl' />
                             </button>

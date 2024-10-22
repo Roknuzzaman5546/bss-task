@@ -5,6 +5,7 @@ import Category from "../Components/Category/Category";
 import Feestdagen from "../Components/Feestdagen/Feestdagen";
 import Hema from "../Components/Hema/Hema";
 import MachineProduct from "../Components/MechineProduct/MachineProduct";
+import Footer from "../Shared/Footer/Footer";
 import Navbar from "../Shared/Navbar";
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
             <MachineProduct></MachineProduct>
             <Feestdagen></Feestdagen>
             <Hema></Hema>
+            <Footer></Footer>
         </div>
     );
 };
