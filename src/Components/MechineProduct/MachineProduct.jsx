@@ -8,6 +8,7 @@ import cardcarosulImg3 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel
 import cardcarosulImg4 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-keukentextiel.webp'
 import cardcarosulImg5 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-servies.webp'
 import cardcarosulImg6 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-warmtekussens-kruik.webp'
+import nextImg from '../../assets/shared/Next.jpg'
 
 const MachineProduct = () => {
     return (
@@ -139,6 +140,11 @@ const MachineProduct = () => {
                             titleText={'in 14 kleuren'}
                         />
                     </div>
+                    <div className=' flex flex-col items-center justify-center'>
+                        <NextCardStyle
+                            nextText={'bekijk alls bekijk'}
+                            image={nextImg} />
+                    </div>
                 </Carousel>
             </div>
         </div>
@@ -157,6 +163,7 @@ const CustomLeftArrow = ({ onClick }) => {
 
 import { IoMdArrowForward } from 'react-icons/io';
 import { IoArrowBack, IoArrowForward } from 'react-icons/io5';
+import NextCardStyle from "../../Shared/NextCard/NextCardStyle";
 const CustomRightArrow = ({ onClick }) => {
     return (
         <button onClick={onClick} style={arrowStyles.right} className=' absolute shadow-md'>

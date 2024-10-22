@@ -2,6 +2,7 @@ import cardcarosulImg from '../../assets/aanbieging/HEMA-2024-promoslider-600x75
 import cardcarosulImg1 from '../../assets/aanbieging/HEMA-2024-promoslider-600x750-wk43-44-fotocadeaus.webp'
 import cardcarosulImg2 from '../../assets/aanbieging/HEMA-2024-promoslider-600x750-wk43-44-fotoboeken.webp'
 import cardcarosulImg3 from '../../assets/aanbieging/HEMA-2024-promoslider-600x750-wk43-44-afdrukken.webp'
+import nextImg from '../../assets/shared/Next.jpg'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { IoArrowForward } from "react-icons/io5";
@@ -107,6 +108,11 @@ const Aanbieding = () => {
                             headline={"foto's afdrukken"}
                             image={cardcarosulImg3} />
                     </div>
+                    <div className=' flex flex-col items-center justify-center'>
+                        <NextCardStyle
+                            nextText={'bekijk alls van HEMA foto'}
+                            image={nextImg} />
+                    </div>
                 </Carousel>
             </div>
         </div>
@@ -125,6 +131,7 @@ const CustomLeftArrow = ({ onClick }) => {
 
 import { IoMdArrowForward } from 'react-icons/io';
 import { IoArrowBack } from 'react-icons/io5';
+import NextCardStyle from '../../Shared/NextCard/NextCardStyle';
 const CustomRightArrow = ({ onClick }) => {
     return (
         <button onClick={onClick} style={arrowStyles.right} className=' absolute shadow-md'>

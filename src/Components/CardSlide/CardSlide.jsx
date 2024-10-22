@@ -6,6 +6,7 @@ import cardcarosulImg3 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel
 import cardcarosulImg4 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-keukentextiel.webp'
 import cardcarosulImg5 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-servies.webp'
 import cardcarosulImg6 from '../../assets/cardSlide/HEMA-2024-homepage-carrousel-600x750-wk41-42-warmtekussens-kruik.webp'
+import nextImg6 from '../../assets/shared/Next.jpg'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -139,6 +140,11 @@ const CardSlide = () => {
                             titleText={'diverse shorten'}
                             image={cardcarosulImg6} />
                     </div>
+                    <div className=' flex flex-col items-center justify-center'>
+                        <NextCardStyle
+                            nextText={'meer anmbiedingen'}
+                            image={nextImg6} />
+                    </div>
                 </Carousel>
             </div>
         </div>
@@ -158,6 +164,7 @@ const CustomLeftArrow = ({ onClick }) => {
 import { IoMdArrowForward } from 'react-icons/io';
 import { IoArrowBack } from 'react-icons/io5';
 import CardStyles from './CardStyles';
+import NextCardStyle from '../../Shared/NextCard/NextCardStyle'
 const CustomRightArrow = ({ onClick }) => {
     return (
         <button onClick={onClick} style={arrowStyles.right} className=' absolute shadow-md'>

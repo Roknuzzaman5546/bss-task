@@ -14,6 +14,8 @@ import loveImg75 from '../../assets/hema/75.svg'
 import loveImg100 from '../../assets/hema/100.svg'
 import loveImg150 from '../../assets/hema/150.svg'
 import loveImg250 from '../../assets/hema/250.svg'
+import NextCardStyle from '../../Shared/NextCard/NextCardStyle';
+import nextImg from '../../assets/shared/Next.jpg'
 
 const Hema = () => {
     return (
@@ -21,11 +23,11 @@ const Hema = () => {
             {/* heading */}
             <div className=" flex justify-between items-center px-2">
                 <div>
-                    <h2 className=" font-sans font-bold text-2xl text-[#3a3a3a] text-ellipsis">spaar voor leuke extra's</h2>
+                    <h2 className=" font-sans font-bold text-2xl text-[#3a3a3a] text-ellipsis">spaar voor leuke {"extra's"}</h2>
                     <p className=" text-xs mt-2">wissel je punten in voor gratis producten</p>
                 </div>
                 <div className=" flex justify-center items-center gap-2 font-sans">
-                    <a className="navAfter relative text-xs font-semibold cursor-pointer md:flex hidden">bekijk alles</a>
+                    <a className="hover:border-b-[1.5px] border-black text-xs font-semibold cursor-pointer md:flex hidden">bekijk alles</a>
                     <IoArrowForward></IoArrowForward>
                 </div>
             </div>
@@ -128,6 +130,10 @@ const Hema = () => {
                             loveImg={loveImg100}
                             headline={'heren gebried mode'}
                             image={cardcarosulImg6} />
+                    </div><div className=' flex flex-col items-center justify-center'>
+                        <NextCardStyle
+                            nextText={'bekijk alls flex-col'}
+                            image={nextImg} />
                     </div>
                 </Carousel>
             </div>
