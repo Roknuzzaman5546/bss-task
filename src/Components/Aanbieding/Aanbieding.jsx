@@ -11,9 +11,9 @@ import CardStyles from "../CardSlide/CardStyles";
 
 const Aanbieding = () => {
     return (
-        <div className="md:max-w-screen-2xl w-11/12 mx-auto mt-20">
+        <div className="md:max-w-screen-2xl sm:w-11/12 mx-auto mt-20">
             {/* heading */}
-            <div className=" flex justify-between items-center px-2">
+            <div className=" flex justify-between items-center md:px-2 px-4">
                 <div>
                     <h2 className=" font-sans font-bold text-3xl text-[#3a3a3a]">aanbiedingen bij HEMA fotoservice</h2>
                 </div>

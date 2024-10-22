@@ -13,7 +13,7 @@ import nextImg from '../../assets/shared/Next.jpg'
 const MachineProduct = () => {
     return (
         <div>
-            <div className='xl:max-w-screen-2xl lg:w-[100%] md:w-[100%] w-[100%] bg-[#9c1aff] rounded-3xl mx-auto mt-10 px-2'>
+            <div className='xl:max-w-screen-2xl lg:w-[100%] md:w-[100%] w-[100%] bg-[#9c1aff] rounded-3xl mx-auto mt-10 md:px-2 px-5'>
                 <div className=" md:max-w-screen-2xl w-11/12 flex md:flex-row flex-col justify-between md:items-center items-start gap-2 xl:pb-28 lg:pb-20 md:pb-20 pb-20 md:pt-14 pt-8 mx-auto">
                     <div>
                         <h2 className=' font-sans font-bold text-[#ffff] text-justify'>Ontdek onze vriendenprijsjes</h2>
@@ -26,7 +26,7 @@ const MachineProduct = () => {
                 </div>
             </div>
             {/* carosul part */}
-            <div className=' -mt-16 md:max-w-screen-2xl w-11/12 mx-auto px-2'>
+            <div className=' -mt-16 md:max-w-screen-2xl sm:w-11/12 mx-auto'>
                 <Carousel
                     additionalTransfrom={0}
                     arrows

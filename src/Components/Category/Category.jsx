@@ -12,7 +12,7 @@ import WithStyles from './WithStyles';
 
 const Category = () => {
     return (
-        <div className='md:w-[93%] w-[100%] mx-auto mt-0.5'>
+        <div className='md:max-w-screen-2xl sm:w-11/12 mx-auto mt-0.5'>
             <div className=' mt-7 overflow-visible'>
                 <Carousel
                     additionalTransfrom={0}
