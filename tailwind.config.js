@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Poppins', 'Century Gothic', 'Apple Gothic', 'sans-serif'],
+        hurme: ['HurmeHEMA', 'Century Gothic', 'CenturyGothic', 'AppleGothic', 'sans-serif']
       },
     },
   },
