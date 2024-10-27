@@ -7,8 +7,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Poppins', 'Century Gothic', 'Apple Gothic', 'sans-serif'],
-        hurme: ['HurmeHEMA', 'Century Gothic', 'CenturyGothic', 'AppleGothic', 'sans-serif']
+        'sans': ['Poppins', 'Century Gothic', 'Apple Gothic', 'sans-serif'],
+        'hurme': ['HurmeHEMA', 'Century Gothic', 'CenturyGothic', 'AppleGothic', 'sans-serif']
+      },
+      screens: {
+        'custom': '1025px',
+        'custom-lg': '1335px',
       },
     },
   },
