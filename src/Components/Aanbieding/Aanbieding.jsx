@@ -11,109 +11,111 @@ import CardStyles from "../CardSlide/CardStyles";
 
 const Aanbieding = () => {
     return (
-        <div className="md:max-w-screen-2xl sm:w-11/12 mx-auto mt-20">
-            {/* heading */}
-            <div className=" flex justify-between items-center md:px-2 px-4">
-                <div>
-                    <h2 className=" font-sans font-bold text-3xl text-[#3a3a3a]">aanbiedingen bij HEMA fotoservice</h2>
+        <div className='custom-range:px-9' >
+            <div className=" md:max-w-[1280px] max-w-full mx-auto  mt-20 ">
+                {/* heading */}
+                <div className=" flex justify-between items-center md:px-2 px-4">
+                    <div>
+                        <h2 className=" font-sans font-bold text-3xl text-[#3a3a3a]">aanbiedingen bij HEMA fotoservice</h2>
+                    </div>
+                    <div className=" flex justify-center items-center gap-2 font-sans">
+                        <a className="hover:border-b-[1.5px] border-black text-xs font-semibold cursor-pointer md:flex hidden">bekijk alles</a>
+                        <IoArrowForward></IoArrowForward>
+                    </div>
                 </div>
-                <div className=" flex justify-center items-center gap-2 font-sans">
-                    <a className="hover:border-b-[1.5px] border-black text-xs font-semibold cursor-pointer md:flex hidden">bekijk alles</a>
-                    <IoArrowForward></IoArrowForward>
-                </div>
-            </div>
-            <div className=' mt-8'>
-                <Carousel
-                    additionalTransfrom={0}
-                    arrows
-                    autoPlaySpeed={3000}
-                    centerMode={false}
-                    className=""
-                    containerClass="container"
-                    dotListClass=""
-                    draggable
-                    focusOnSelect={false}
-                    infinite={false}
-                    itemClass="px-3"
-                    keyBoardControl
-                    minimumTouchDrag={80}
-                    pauseOnHover
-                    renderArrowsWhenDisabled={false}
-                    renderButtonGroupOutside={false}
-                    renderDotsOutside={false}
-                    responsive={{
-                        desktop: {
-                            breakpoint: {
-                                max: 3000,
-                                min: 1024
+                <div className=' mt-8'>
+                    <Carousel
+                        additionalTransfrom={0}
+                        arrows
+                        autoPlaySpeed={3000}
+                        centerMode={false}
+                        className=""
+                        containerClass="container"
+                        dotListClass=""
+                        draggable
+                        focusOnSelect={false}
+                        infinite={false}
+                        itemClass="px-3"
+                        keyBoardControl
+                        minimumTouchDrag={80}
+                        pauseOnHover
+                        renderArrowsWhenDisabled={false}
+                        renderButtonGroupOutside={false}
+                        renderDotsOutside={false}
+                        responsive={{
+                            desktop: {
+                                breakpoint: {
+                                    max: 3000,
+                                    min: 1024
+                                },
+                                items: 4,
+                                partialVisibilityGutter: 40
                             },
-                            items: 4,
-                            partialVisibilityGutter: 40
-                        },
-                        mobile: {
-                            breakpoint: {
-                                max: 464,
-                                min: 0
+                            mobile: {
+                                breakpoint: {
+                                    max: 464,
+                                    min: 0
+                                },
+                                items: 1.5,
+                                partialVisibilityGutter: 30
                             },
-                            items: 1.5,
-                            partialVisibilityGutter: 30
-                        },
-                        tablet: {
-                            breakpoint: {
-                                max: 1024,
-                                min: 464
-                            },
-                            items: 2,
-                            partialVisibilityGutter: 30
-                        }
-                    }}
-                    rewind={false}
-                    rewindWithAnimation={false}
-                    rtl={false}
-                    shouldResetAutoplay
-                    showDots={false}
-                    sliderClass=""
-                    slidesToSlide={3}
-                    swipeable
+                            tablet: {
+                                breakpoint: {
+                                    max: 1024,
+                                    min: 464
+                                },
+                                items: 2,
+                                partialVisibilityGutter: 30
+                            }
+                        }}
+                        rewind={false}
+                        rewindWithAnimation={false}
+                        rtl={false}
+                        shouldResetAutoplay
+                        showDots={false}
+                        sliderClass=""
+                        slidesToSlide={3}
+                        swipeable
 
-                    customLeftArrow={<CustomLeftArrow />}
-                    customRightArrow={<CustomRightArrow />}
-                >
-                    <div className=' flex flex-col items-center justify-center'>
-                        <CardStyles
-                            boldText={'30%'}
-                            bodyText={'korting'}
-                            headline={'wanddecoratie'}
-                            image={cardcarosulImg}
-                        />
-                    </div>
-                    <div className=' flex flex-col items-center justify-center'>
-                        <CardStyles
-                            boldText={'30%'}
-                            bodyText={'korting'}
-                            headline={'fotocadeous'}
-                            image={cardcarosulImg1} />
-                    </div>
-                    <div className=' flex flex-col items-center justify-center'>
-                        <CardStyles
-                            boldText={'30%'}
-                            bodyText={'korting'}
-                            headline={'fotoboeken'}
-                            image={cardcarosulImg2} />
-                    </div>
-                    <div className=' flex flex-col items-center justify-center'>
-                        <CardStyles
-                            boldText={'30%'}
-                            bodyText={'korting'}
-                            headline={"foto's afdrukken"}
-                            image={cardcarosulImg3} />
-                    </div>
-                    <div className=' flex flex-col items-center justify-center'>
-                        <NextCardStyle
-                            nextText={'bekijk alls van HEMA foto'}
-                            image={nextImg} />
-                    </div>
-                </Carousel>
+                        customLeftArrow={<CustomLeftArrow />}
+                        customRightArrow={<CustomRightArrow />}
+                    >
+                        <div className=' flex flex-col items-center justify-center'>
+                            <CardStyles
+                                boldText={'30%'}
+                                bodyText={'korting'}
+                                headline={'wanddecoratie'}
+                                image={cardcarosulImg}
+                            />
+                        </div>
+                        <div className=' flex flex-col items-center justify-center'>
+                            <CardStyles
+                                boldText={'30%'}
+                                bodyText={'korting'}
+                                headline={'fotocadeous'}
+                                image={cardcarosulImg1} />
+                        </div>
+                        <div className=' flex flex-col items-center justify-center'>
+                            <CardStyles
+                                boldText={'30%'}
+                                bodyText={'korting'}
+                                headline={'fotoboeken'}
+                                image={cardcarosulImg2} />
+                        </div>
+                        <div className=' flex flex-col items-center justify-center'>
+                            <CardStyles
+                                boldText={'30%'}
+                                bodyText={'korting'}
+                                headline={"foto's afdrukken"}
+                                image={cardcarosulImg3} />
+                        </div>
+                        <div className=' flex flex-col items-center justify-center'>
+                            <NextCardStyle
+                                nextText={'bekijk alls van HEMA foto'}
+                                image={nextImg} />
+                        </div>
+                    </Carousel>
+                </div>
             </div>
         </div>
     );

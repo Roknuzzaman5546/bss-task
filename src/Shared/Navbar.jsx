@@ -46,7 +46,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 {/* down menu */}
-                <div className='flex py-[15px] justify-between items-center custom-range:px-12 px-5  max-w-[1280px] mx-auto'>
+                <div className='flex xl:py-[15px] lg:py-[16px] md:py-[15px] py-[15px] justify-between items-center custom-range:px-12 px-5  max-w-[1280px] mx-auto'>
                     <div className='flex items-center '>
                         <img className='mr-[102px] ' src={logo} height={56} width={56} alt="" />
                     </div>
@@ -56,7 +56,7 @@ const Navbar = () => {
                         <IoIosArrowDown className='text-[#323232]' />
                     </div>
                     <div className=' flex justify-center items-center w-full mr-[55px]'>
-                        <input type="text" name="" id="" placeholder='Waar be je naar op Zoak?' className=' rounded-3xl h-[44px] w-full outline-0 ring-0 bg-[#efefef] hover:bg-[#dfdfdf] py-3 px-6 placeholder:text-[#767676] placeholder:lowercase placeholder:font-hurme placeholder:text-[16px] placeholder:leading-5 placeholder:font-normal transition-colors duration-700' />
+                        <input type="text" name="" id="" placeholder='Waar be je naar op Zoak?' className=' rounded-3xl h-[44px] w-full outline-0 ring-0 bg-[#efefef] hover:bg-[#dfdfdf] py-3 px-6 placeholder:text-[#767676] placeholder:lowercase placeholder:font-hurme font-hurme placeholder:text-[16px] placeholder:leading-5 placeholder:font-normal transition-colors duration-700' />
                         <LuSearch className=' -ml-11 text-[21px] font-semibold' />
                     </div>
                     <div className=' flex items-center gap-3 mr-2'>

@@ -14,16 +14,14 @@ import categoryImg13 from '../../assets/category/HEMA-2023-categoryslider-280x28
 import categoryImg14 from '../../assets/category/HEMA-2024-categoryslider-280x280-vriendenprijsjes.webp';
 import categoryImg15 from '../../assets/category/HEMA-categoryslider-2023-280x280-aanbiedingen.webp';
 import categoryImg16 from '../../assets/category/HEMA-categoryslider-2023-280x280-nieuw.webp';
-
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
 import WithStyles from './WithStyles';
 
 const Category = () => {
     return (
-        <div className=' max-w-[1280px] mx-auto px-2'>
-            <div className=' mt-[25px] overflow-visible'>
+        <div className='  custom-range:px-9 px-5 '>
+            <div className=' mt-[25px] max-w-[1280px] mx-auto overflow-visible'>
                 <Carousel
                     additionalTransfrom={0}
                     arrows
@@ -56,7 +54,7 @@ const Category = () => {
                                 max: 1440, // for laptop
                                 min: 1024
                             },
-                            items: 8,
+                            items: 7,
                             partialVisibilityGutter: 30
                         },
                         tablet: {
@@ -84,7 +82,6 @@ const Category = () => {
                     sliderClass=""
                     slidesToSlide={7}
                     swipeable
-
                     customLeftArrow={<CustomLeftArrow />}
                     customRightArrow={<CustomRightArrow />}
                 >
@@ -179,7 +176,7 @@ export default Category;
 
 const CustomLeftArrow = ({ onClick }) => {
     return (
-        <button onClick={onClick} style={arrowStyles.left} className=' absolute shadow-md md:block hidden'> 
+        <button onClick={onClick} style={arrowStyles.left} className='shadow-md md:block hidden'>
             <IoArrowBack className='transition-transform duration-500 ease-in-out hover:scale-110' />
         </button>
     );
@@ -189,7 +186,7 @@ import { IoMdArrowForward } from 'react-icons/io';
 import { IoArrowBack } from 'react-icons/io5';
 const CustomRightArrow = ({ onClick }) => {
     return (
-        <button onClick={onClick} style={arrowStyles.right} className=' absolute shadow-md md:block hidden'> 
+        <button onClick={onClick} style={arrowStyles.right} className='shadow-md md:block hidden'>
             <IoMdArrowForward className='transition-transform duration-500 ease-in-out hover:scale-110' />
         </button>
     );
@@ -200,26 +197,28 @@ const CustomRightArrow = ({ onClick }) => {
 const arrowStyles = {
     left: {
         position: 'absolute',
-        top: '40%',
-        left: '0',
+        top: '37%',
+        left: 0,
+        // bottom: 0,
         transform: 'translateY(-50%)',
         backgroundColor: '#fff',
         border: '1px solid #dfdfdf',
         borderRadius: '100%',
-        padding: '17px',
+        padding: '16px',
         fontSize: '30px',
         cursor: 'pointer',
-        zIndex: 2,
+        zIndex: 3,
     },
     right: {
         position: 'absolute',
-        top: '40%',
-        right: '0',
+        top: '37%',
+        right: 0,
+        // bottom: 0,
         transform: 'translateY(-50%)',
         backgroundColor: '#fff',
         border: '1px solid #dfdfdf',
         borderRadius: '100%',
-        padding: '17px',
+        padding: '16px',
         fontSize: '30px',
         cursor: 'pointer',
         zIndex: 3,

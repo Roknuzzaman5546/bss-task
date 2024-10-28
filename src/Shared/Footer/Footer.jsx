@@ -11,7 +11,7 @@ const Footer = () => {
         <div>
             {/* bg part in footer */}
             <div className='bg-[#9C1AFF] mt-16'>
-                <div className='md:max-w-screen-2xl w-11/12 mx-auto flex lg:flex-row md:flex-col-reverse flex-col-reverse lg:gap-0 md:gap-8 gap-8 justify-between items-start py-12 px-2'>
+                <div className='md:max-w-[1280px] custom-range:px-12 mx-auto flex lg:flex-row md:flex-col-reverse flex-col-reverse lg:gap-0 md:gap-8 gap-8 justify-between items-start py-12'>
                     <div className=' flex lg:flex-row md:flex-col flex-col items-start justify-between md:w-[52%] w-full lg:gap-0 md:gap-8 gap-8'>
                         <div className=' flex flex-col items-start gap-2'>
                             <h2 className=' text-[22px] font-bold text-white'>hulp nodig?</h2>
@@ -38,7 +38,7 @@ const Footer = () => {
                 </div>
             </div>
             {/* media part for desktop */}
-            <div className='md:max-w-screen-2xl w-11/12 mx-auto lg:flex md:hidden hidden justify-between items-start py-12 px-2'>
+            <div className='md:max-w-[1280px] custom-range:px-12 mx-auto lg:flex md:hidden hidden justify-between items-start py-12 px-2'>
                 <div className=' w-[33.33%]'>
                     <h2 className=' text-[22px] font-bold text-[#323232] leading-8'>volg HEMA</h2>
                     <div className=' flex items-center gap-2 pt-5'>
@@ -76,7 +76,7 @@ const Footer = () => {
                 </div>
             </div>
             {/* media part for mobile and tablet */}
-            <div className='md:max-w-screen-2xl w-11/12 mx-auto lg:hidden md:flex flex-col-reverse flex justify-between items-start py-12 px-2'>
+            <div className='md:max-w-[1280px] custom-range:px-12 mx-auto lg:hidden md:flex flex-col-reverse flex justify-between items-start py-12 px-2'>
                 <div className=' lg:w-[33.33%] md:w-full w-full pt-7'>
                     <h2 className=' text-[22px] font-bold text-[#323232] leading-8'>makkelijk betalen*</h2>
                     <div className=' flex items-center gap-2 pt-3 pb-3'>
@@ -114,7 +114,7 @@ const Footer = () => {
                 </div>
             </div>
             {/* text part for desktop device */}
-            <div className=' md:max-w-screen-2xl w-11/12 mx-auto lg:flex md:flex hidden justify-between items-start px-2 font-hurme border-t border-[#e1e1e1] pt-12'>
+            <div className=' md:max-w-[1280px] custom-range:px-12 mx-auto lg:flex md:flex hidden justify-between items-start px-2 font-hurme border-t border-[#e1e1e1] pt-12'>
                 <div>
                     <h2 className=' text-xl font-bold text-[#323232] mb-2 leading-6 font-hurme'>populaire categorieën</h2>
                     <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>dameskleding</p>
@@ -167,7 +167,7 @@ const Footer = () => {
                 </div>
             </div>
             {/* text part formobile and tablet */}
-            <div className=' md:max-w-screen-2xl w-11/12 mx-auto lg:hidden md:hidden flex justify-between items-start px-2 font-hurme border-t border-[#e1e1e1] pt-12'>
+            <div className=' md:max-w-[1280px] custom-range:px-12 mx-auto lg:hidden md:hidden flex justify-between items-start px-2 font-hurme border-t border-[#e1e1e1] pt-12'>
                 <div>
                     <div>
                         <h2 className=' text-xl font-bold text-[#323232] mb-2 leading-6 font-hurme'>populaire categorieën</h2>

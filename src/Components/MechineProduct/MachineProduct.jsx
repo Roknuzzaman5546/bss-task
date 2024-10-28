@@ -13,7 +13,7 @@ import nextImg from '../../assets/shared/Next.jpg'
 const MachineProduct = () => {
     return (
         <div>
-            <div className='xl:max-w-screen-2xl lg:w-[100%] md:w-[100%] w-[100%] bg-[#9c1aff] rounded-3xl mx-auto mt-10 md:px-2 px-5'>
+            <div className='max-w-[1350px] bg-[#9c1aff] rounded-3xl mx-auto mt-10 '>
                 <div className=" md:max-w-screen-2xl w-11/12 flex md:flex-row flex-col justify-between md:items-center items-start gap-2 xl:pb-28 lg:pb-20 md:pb-20 pb-20 md:pt-14 pt-8 mx-auto">
                     <div>
                         <h2 className=' font-sans font-bold text-[#ffff] text-justify'>Ontdek onze vriendenprijsjes</h2>
@@ -26,126 +26,128 @@ const MachineProduct = () => {
                 </div>
             </div>
             {/* carosul part */}
-            <div className=' -mt-16 md:max-w-screen-2xl sm:w-11/12 mx-auto'>
-                <Carousel
-                    additionalTransfrom={0}
-                    arrows
-                    autoPlaySpeed={3000}
-                    centerMode={false}
-                    className=""
-                    containerClass="container"
-                    dotListClass=""
-                    draggable
-                    focusOnSelect={false}
-                    infinite={false}
-                    itemClass="px-3"
-                    keyBoardControl
-                    minimumTouchDrag={80}
-                    pauseOnHover
-                    renderArrowsWhenDisabled={false}
-                    renderButtonGroupOutside={false}
-                    renderDotsOutside={false}
-                    responsive={{
-                        desktop: {
-                            breakpoint: {
-                                max: 3000,
-                                min: 1024
+            <div className="custom-range:px-9">
+                <div className=' -mt-16 md:max-w-[1280px] mx-auto'>
+                    <Carousel
+                        additionalTransfrom={0}
+                        arrows
+                        autoPlaySpeed={3000}
+                        centerMode={false}
+                        className=""
+                        containerClass="container"
+                        dotListClass=""
+                        draggable
+                        focusOnSelect={false}
+                        infinite={false}
+                        itemClass="px-3"
+                        keyBoardControl
+                        minimumTouchDrag={80}
+                        pauseOnHover
+                        renderArrowsWhenDisabled={false}
+                        renderButtonGroupOutside={false}
+                        renderDotsOutside={false}
+                        responsive={{
+                            desktop: {
+                                breakpoint: {
+                                    max: 3000,
+                                    min: 1024
+                                },
+                                items: 4,
+                                partialVisibilityGutter: 40
                             },
-                            items: 4,
-                            partialVisibilityGutter: 40
-                        },
-                        mobile: {
-                            breakpoint: {
-                                max: 464,
-                                min: 0
+                            mobile: {
+                                breakpoint: {
+                                    max: 464,
+                                    min: 0
+                                },
+                                items: 1.5,
+                                partialVisibilityGutter: 30
                             },
-                            items: 1.5,
-                            partialVisibilityGutter: 30
-                        },
-                        tablet: {
-                            breakpoint: {
-                                max: 1024,
-                                min: 464
-                            },
-                            items: 2,
-                            partialVisibilityGutter: 30
-                        }
-                    }}
-                    rewind={false}
-                    rewindWithAnimation={false}
-                    rtl={false}
-                    shouldResetAutoplay
-                    showDots={false}
-                    sliderClass=""
-                    slidesToSlide={3}
-                    swipeable
+                            tablet: {
+                                breakpoint: {
+                                    max: 1024,
+                                    min: 464
+                                },
+                                items: 2,
+                                partialVisibilityGutter: 30
+                            }
+                        }}
+                        rewind={false}
+                        rewindWithAnimation={false}
+                        rtl={false}
+                        shouldResetAutoplay
+                        showDots={false}
+                        sliderClass=""
+                        slidesToSlide={3}
+                        swipeable
 
-                    customLeftArrow={<CustomLeftArrow />}
-                    customRightArrow={<CustomRightArrow />}
-                >
-                    <div className=' flex flex-col items-center justify-center'>
-                        <CardStyles
-                            bodyText={'korting'}
-                            boldText={'30%'}
-                            headline={'heren gebried mode'}
-                            titleText={'diverse shorten'}
-                            image={cardcarosulImg6} />
-                    </div>
-                    <div className=' flex flex-col items-center justify-center'>
-                        <CardStyles
-                            boldText={'30%'}
-                            bodyText={'korting'}
-                            headline={'damescoltruien'}
-                            titleText={'diverse kleuren, S t/m XL'}
-                            image={cardcarosulImg5} />
-                    </div>
-                    <div className=' flex flex-col items-center justify-center'>
-                        <CardStyles
-                            boldText={'1+1'}
-                            bodyText={'korting'}
-                            headline={'dameshmend'}
-                            titleText={'alle combinties zijn mogelijk'}
-                            image={cardcarosulImg4} />
-                    </div>
-                    <div className=' flex flex-col items-center justify-center'>
-                        <CardStyles
-                            boldText={'30%'}
-                            bodyText={'korting'}
-                            headline={'kofibonen  1 kg'}
-                            titleText={'alle combinties zijn mogelijk'}
-                            image={cardcarosulImg3} />
-                    </div>
-                    <div className=' flex flex-col items-center justify-center'>
-                        <CardStyles
-                            boldText={'1+1'}
-                            bodyText={'gratis'}
-                            headline={'dames basic-t-shirts'}
-                            titleText={'alle combinties zijn mogelijk'}
-                            image={cardcarosulImg2} />
-                    </div>
-                    <div className=' flex flex-col items-center justify-center'>
-                        <CardStyles
-                            boldText={'1+1'}
-                            bodyText={'gratis'}
-                            headline={'thremo onderGoed'}
-                            titleText={'allie combinets zijn mogelijk'}
-                            image={cardcarosulImg1} />
-                    </div>
-                    <div className=' flex flex-col items-center justify-center'>
-                        <CardStyles
-                            image={cardcarosulImg}
-                            boldText={'30%'}
-                            bodyText={'korting'}
-                            headline={'badtextiel'}
-                            titleText={'in 14 kleuren'}
-                        />
-                    </div>
-                    <div className=' flex flex-col items-center justify-center'>
-                        <NextCardStyle
-                            nextText={'bekijk alls bekijk'}
-                            image={nextImg} />
-                    </div>
-                </Carousel>
+                        customLeftArrow={<CustomLeftArrow />}
+                        customRightArrow={<CustomRightArrow />}
+                    >
+                        <div className=' flex flex-col items-center justify-center'>
+                            <CardStyles
+                                bodyText={'korting'}
+                                boldText={'30%'}
+                                headline={'heren gebried mode'}
+                                titleText={'diverse shorten'}
+                                image={cardcarosulImg6} />
+                        </div>
+                        <div className=' flex flex-col items-center justify-center'>
+                            <CardStyles
+                                boldText={'30%'}
+                                bodyText={'korting'}
+                                headline={'damescoltruien'}
+                                titleText={'diverse kleuren, S t/m XL'}
+                                image={cardcarosulImg5} />
+                        </div>
+                        <div className=' flex flex-col items-center justify-center'>
+                            <CardStyles
+                                boldText={'1+1'}
+                                bodyText={'korting'}
+                                headline={'dameshmend'}
+                                titleText={'alle combinties zijn mogelijk'}
+                                image={cardcarosulImg4} />
+                        </div>
+                        <div className=' flex flex-col items-center justify-center'>
+                            <CardStyles
+                                boldText={'30%'}
+                                bodyText={'korting'}
+                                headline={'kofibonen  1 kg'}
+                                titleText={'alle combinties zijn mogelijk'}
+                                image={cardcarosulImg3} />
+                        </div>
+                        <div className=' flex flex-col items-center justify-center'>
+                            <CardStyles
+                                boldText={'1+1'}
+                                bodyText={'gratis'}
+                                headline={'dames basic-t-shirts'}
+                                titleText={'alle combinties zijn mogelijk'}
+                                image={cardcarosulImg2} />
+                        </div>
+                        <div className=' flex flex-col items-center justify-center'>
+                            <CardStyles
+                                boldText={'1+1'}
+                                bodyText={'gratis'}
+                                headline={'thremo onderGoed'}
+                                titleText={'allie combinets zijn mogelijk'}
+                                image={cardcarosulImg1} />
+                        </div>
+                        <div className=' flex flex-col items-center justify-center'>
+                            <CardStyles
+                                image={cardcarosulImg}
+                                boldText={'30%'}
+                                bodyText={'korting'}
+                                headline={'badtextiel'}
+                                titleText={'in 14 kleuren'}
+                            />
+                        </div>
+                        <div className=' flex flex-col items-center justify-center'>
+                            <NextCardStyle
+                                nextText={'bekijk alls bekijk'}
+                                image={nextImg} />
+                        </div>
+                    </Carousel>
+                </div>
             </div>
         </div>
     );
