@@ -56,7 +56,7 @@ const Category = () => {
                                 max: 1440, // for laptop
                                 min: 1024
                             },
-                            items: 7,
+                            items: 8,
                             partialVisibilityGutter: 30
                         },
                         tablet: {
