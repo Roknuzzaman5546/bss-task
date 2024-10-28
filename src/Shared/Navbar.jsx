@@ -26,47 +26,49 @@ const Navbar = () => {
 
 
     return (
-        <div className=''>
+        <div className={`w-full sticky top-0 left-0 right-0 bg-white mx-auto transition-all duration-500 ease-in-out z-[310] ${isNavbarJumping ? "shadow-md" : "transition-all duration-300 ease-in-out"}`}>
             {/* for destop device */}
-            <div className='md:block hidden'>
+            <div className={`md:block hidden`}>
                 {/* Upper menu */}
-                <div className={`md:max-w-[1280px] mx-auto lg:flex md:hidden hidden justify-between items-center border-b border-[#f5f5f5] custom:px-12 custom-lg:px-12 px-5 transition-all duration-300 ease-in-out py-3`}>
-                    <div className="flex items-center">
-                        <a className="navAfter relative font-semibold mr-6 text-[14px] transition-none leading-4 cursor-pointer text-[#3a3a3a]">fotoservice</a>
-                        <a className="navAfter relative font-semibold mr-6 text-[14px] transition-none leading-4 cursor-pointer text-[#3a3a3a]">tickets & deals</a>
-                        <a className="navAfter relative font-semibold mr-6 text-[14px] transition-none leading-4 cursor-pointer text-[#3a3a3a]">verzekeringen</a>
-                        <a className="navAfter relative font-semibold text-[14px] transition-none leading-4 cursor-pointer text-[#3a3a3a]">inspiratie</a>
-                    </div>
-                    <div className="flex items-center">
-                        <a className="navAfter relative mr-6 font-semibold text-[14px] transition-none leading-4 cursor-pointer text-[#3a3a3a]">winkels</a>
-                        <a className="navAfter relative mr-6 font-semibold text-[14px] transition-none leading-4  cursor-pointer text-[#3a3a3a]">oklantenpas</a>
-                        <a className="navAfter relative font-semibold text-[14px] transition-none leading-4 cursor-pointer text-[#3a3a3a]">klantenservice</a>
+                <div className={`max-w-[1280px] mx-auto custom-range:px-12 px-5 pt-[13px] ${isNavbarJumping ? "h-0 opacity-0 hidden transition-all duration-300 ease-in-out" : "h-auto opacity-100"}`}>
+                    <div className=' border-b border-[#f5f5f5] lg:flex md:hidden hidden justify-between items-center pb-3'>
+                        <div className="flex items-center">
+                            <a className="navAfter relative font-semibold mr-6 text-[14px] transition-none leading-4 cursor-pointer text-[#3a3a3a]">fotoservice</a>
+                            <a className="navAfter relative font-semibold mr-6 text-[14px] transition-none leading-4 cursor-pointer text-[#3a3a3a]">tickets & deals</a>
+                            <a className="navAfter relative font-semibold mr-6 text-[14px] transition-none leading-4 cursor-pointer text-[#3a3a3a]">verzekeringen</a>
+                            <a className="navAfter relative font-semibold text-[14px] transition-none leading-4 cursor-pointer text-[#3a3a3a]">inspiratie</a>
+                        </div>
+                        <div className="flex items-center">
+                            <a className="navAfter relative mr-6 font-semibold text-[14px] transition-none leading-4 cursor-pointer text-[#3a3a3a]">winkels</a>
+                            <a className="navAfter relative mr-6 font-semibold text-[14px] transition-none leading-4  cursor-pointer text-[#3a3a3a]">oklantenpas</a>
+                            <a className="navAfter relative font-semibold text-[14px] transition-none leading-4 cursor-pointer text-[#3a3a3a]">klantenservice</a>
+                        </div>
                     </div>
                 </div>
                 {/* down menu */}
-                <div className='flex mt-[17px] justify-between items-center custom:px-12 custom-lg:px-12 px-5 md:max-w-[1280px] mx-auto'>
-                    <div className='flex items-center'>
-                        <img src={logo} height={56} width={56} alt="" />
+                <div className='flex py-[16px] justify-between items-center custom-range:px-12 px-5 max-w-[1280px] mx-auto'>
+                    <div className='flex items-center '>
+                        <img className='mr-[102px]' src={logo} height={56} width={56} alt="" />
                     </div>
-                    <div className=' lg:flex md:hidden hidden justify-between items-center gap-2'>
-                        <HiOutlineBars3 className=' text-[25px] font-bold text-[#323232]' />
+                    <div className=' lg:flex md:hidden hidden justify-between items-center gap-2 mr-[33px] '>
+                        <HiOutlineBars3 className=' text-[25px] font-bold text-[#292929]' />
                         <h2 className=' font-semibold text-sm text-[#323232]'>categorieën</h2>
                         <IoIosArrowDown className='text-[#323232]' />
                     </div>
-                    <div className=' flex justify-center items-center'>
-                        <input type="text" name="" id="" placeholder='Waar be je naar op Zoak?' className=' rounded-3xl h-[44px] w-full outline-0 ring-0 bg-[#efefef] hover:bg-[#dfdfdf] py-3 px-6 placeholder:text-[#767676] transition-colors duration-700' />
-                        {/* <LuSearch className=' -ml-12 text-xl' /> */}
+                    <div className=' flex justify-center items-center w-full mr-[55px]'>
+                        <input type="text" name="" id="" placeholder='Waar be je naar op Zoak?' className=' rounded-3xl h-[44px] w-full outline-0 ring-0 bg-[#efefef] hover:bg-[#dfdfdf] py-3 px-6 placeholder:text-[#767676] placeholder:lowercase placeholder:font-hurme placeholder:text-[16px] placeholder:leading-5 placeholder:font-normal transition-colors duration-700' />
+                        <LuSearch className=' -ml-11 text-[21px] font-semibold' />
                     </div>
-                    <div className=' flex items-center gap-2 '>
-                        <button className=' flex justify-center items-center gap-2 hover:bg-[#efefef] px-3 py-2 rounded-lg transition-colors duration-700'>
+                    <div className=' flex items-center gap-3 mr-2'>
+                        <button className=' flex justify-center items-center gap-2 text-[18px] hover:bg-[#efefef] px-3 py-2 rounded-lg transition-colors duration-700'>
                             <FaRegUser className='text-[#323232]' />
                             <p className='  text-sm font-semibold text-[#323232]'>inloggen</p>
                         </button>
-                        <button className=' hover:bg-[#efefef] px-2 py-2 rounded-lg transition-colors duration-500'>
-                            <img className=' h-5 w-5' src={love} alt="" />
+                        <button className=' hover:bg-[#efefef] px-2 py-2 h-9 w-9 rounded-lg transition-colors duration-500'>
+                            <img src={love} alt="" />
                         </button>
                         <button className=' hover:bg-[#efefef] px-2 py-2.5 rounded-lg transition-colors duration-500'>
-                            <BsHandbag className=' text-lg text-[#323232]' />
+                            <BsHandbag className=' text-[20px] text-[#323232]' />
                         </button>
                     </div>
                     <div className='lg:hidden md:flex flex'>

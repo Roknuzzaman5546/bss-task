@@ -11,8 +11,7 @@ export default {
         'hurme': ['HurmeHEMA', 'Century Gothic', 'CenturyGothic', 'AppleGothic', 'sans-serif']
       },
       screens: {
-        'custom': '1025px',
-        'custom-lg': '1335px',
+        'custom-range': { 'min': '1025px', 'max': '1335px' },
       },
     },
   },

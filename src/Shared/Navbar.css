@@ -13,13 +13,6 @@
   z-index: 310;
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1335px) {
-  .wrapx {
-      padding: 0 48px;
-  }
-}
-
-
 .active {
   font-size: 8px;
   color: #000000 !important;
@@ -66,7 +59,7 @@
 }
 
 
-@keyframes jump {
+/* @keyframes jump {
 
   0%,
   20%,
@@ -87,4 +80,4 @@
 
 .animate-jump {
   animation: jump 1s ease;
-}
+} */
