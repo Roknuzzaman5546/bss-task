@@ -28,7 +28,7 @@ const Feestdagen = () => {
                         draggable
                         focusOnSelect={false}
                         infinite={false}
-                        itemClass="px-2"
+                        itemClass="md:px-2 px-[6px]"
                         keyBoardControl
                         minimumTouchDrag={80}
                         pauseOnHover
@@ -42,24 +42,18 @@ const Feestdagen = () => {
                                     min: 1024
                                 },
                                 items: 3,
-                                partialVisibilityGutter: 40
+                                partialVisibilityGutter: 40,
+                                slidesToSlide: 3 
                             },
                             mobile: {
                                 breakpoint: {
                                     max: 464,
                                     min: 0
                                 },
-                                items: 1.5,
-                                partialVisibilityGutter: 30
+                                items: 1.2,
+                                partialVisibilityGutter: 30,
+                                slidesToSlide: 1
                             },
-                            tablet: {
-                                breakpoint: {
-                                    max: 1024,
-                                    min: 464
-                                },
-                                items: 2,
-                                partialVisibilityGutter: 30
-                            }
                         }}
                         rewind={false}
                         rewindWithAnimation={false}
@@ -67,7 +61,6 @@ const Feestdagen = () => {
                         shouldResetAutoplay
                         showDots={false}
                         sliderClass=""
-                        slidesToSlide={3}
                         swipeable
 
                         customLeftArrow={<CustomLeftArrow />}

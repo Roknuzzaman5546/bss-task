@@ -21,7 +21,7 @@ import WithStyles from './WithStyles';
 const Category = () => {
     return (
         <div className='custom-range:px-9 lg:px-[52px] md:px-3'>
-            <div className=' mt-[25px] max-w-[1280px] mx-auto overflow-visible'>
+            <div className=' md:mt-[25px] mt-4 max-w-[1280px] mx-auto overflow-visible'>
                 <Carousel
                     additionalTransfrom={0}
                     arrows
@@ -33,7 +33,7 @@ const Category = () => {
                     draggable
                     focusOnSelect={false}
                     infinite={false}
-                    itemClass="px-3"
+                    itemClass="md:px-3 px-2"
                     keyBoardControl
                     minimumTouchDrag={80}
                     pauseOnHover
@@ -79,82 +79,82 @@ const Category = () => {
                     <div className=' flex flex-col items-center justify-center'>
                         <WithStyles
                             image={categoryImg1} />
-                        <p className=' text-[#323232] text-sm font-hurme font-semibold mt-[18px]'>sinterklass</p>
+                        <p className=' text-[#323232] md:text-sm text-xs font-hurme font-semibold mt-[18px]'>sinterklass</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
                         <WithStyles
                             image={categoryImg2} />
-                        <p className=' text-[#323232] text-sm font-hurme font-semibold mt-[18px]'>baby</p>
+                        <p className=' text-[#323232] md:text-sm text-xs font-hurme font-semibold mt-[18px]'>baby</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
                         <WithStyles
                             image={categoryImg3} />
-                        <p className=' text-[#323232] text-sm font-hurme font-semibold mt-[18px]'>This is rokon</p>
+                        <p className=' text-[#323232] md:text-sm text-xs font-hurme font-semibold mt-[18px]'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
                         <WithStyles
                             image={categoryImg4} />
-                        <p className=' text-[#323232] text-sm font-hurme font-semibold mt-[18px]'>This is rokon</p>
+                        <p className=' text-[#323232] md:text-sm text-xs font-hurme font-semibold mt-[18px]'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
                         <WithStyles
                             image={categoryImg5} />
-                        <p className=' text-[#323232] text-sm font-hurme font-semibold mt-[18px]'>This is rokon</p>
+                        <p className=' text-[#323232] md:text-sm text-xs font-hurme font-semibold mt-[18px]'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
                         <WithStyles
                             image={categoryImg6} />
-                        <p className=' text-[#323232] text-sm font-hurme font-semibold mt-[18px]'>This is rokon</p>
+                        <p className=' text-[#323232] md:text-sm text-xs font-hurme font-semibold mt-[18px]'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
                         <WithStyles
                             image={categoryImg7} />
-                        <p className=' text-[#323232] text-sm font-hurme font-semibold mt-[18px]'>This is rokon</p>
+                        <p className=' text-[#323232] md:text-sm text-xs font-hurme font-semibold mt-[18px]'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
                         <WithStyles
                             image={categoryImg8} />
-                        <p className=' text-[#323232] text-sm font-hurme font-semibold mt-[18px]'>This is rokon</p>
+                        <p className=' text-[#323232] md:text-sm text-xs font-hurme font-semibold mt-[18px]'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
                         <WithStyles
                             image={categoryImg9} />
-                        <p className=' text-[#323232] text-sm font-hurme font-semibold mt-[18px]'>This is rokon</p>
+                        <p className=' text-[#323232] md:text-sm text-xs font-hurme font-semibold mt-[18px]'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
                         <WithStyles
                             image={categoryImg10} />
-                        <p className=' text-[#323232] text-sm font-hurme font-semibold mt-[18px]'>This is rokon</p>
+                        <p className=' text-[#323232] md:text-sm text-xs font-hurme font-semibold mt-[18px]'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
                         <WithStyles
                             image={categoryImg11} />
-                        <p className=' text-[#323232] text-sm font-hurme font-semibold mt-[18px]'>This is rokon</p>
+                        <p className=' text-[#323232] md:text-sm text-xs font-hurme font-semibold mt-[18px]'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
                         <WithStyles
                             image={categoryImg12} />
-                        <p className=' text-[#323232] text-sm font-hurme font-semibold mt-[18px]'>This is rokon</p>
+                        <p className=' text-[#323232] md:text-sm text-xs font-hurme font-semibold mt-[18px]'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
                         <WithStyles
                             image={categoryImg13} />
-                        <p className=' text-[#323232] text-sm font-hurme font-semibold mt-[18px]'>This is rokon</p>
+                        <p className=' text-[#323232] md:text-sm text-xs font-hurme font-semibold mt-[18px]'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
                         <WithStyles
                             image={categoryImg14} />
-                        <p className=' text-[#323232] text-sm font-hurme font-semibold mt-[18px]'>This is rokon</p>
+                        <p className=' text-[#323232] md:text-sm text-xs font-hurme font-semibold mt-[18px]'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
                         <WithStyles
                             image={categoryImg15} />
-                        <p className=' text-[#323232] text-sm font-hurme font-semibold mt-[18px]'>This is rokon</p>
+                        <p className=' text-[#323232] md:text-sm text-xs font-hurme font-semibold mt-[18px]'>This is rokon</p>
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
                         <WithStyles
                             image={categoryImg16} />
-                        <p className=' text-[#323232] text-sm font-hurme font-semibold mt-[18px]'>This is rokon</p>
+                        <p className=' text-[#323232] md:text-sm text-xs font-hurme font-semibold mt-[18px]'>This is rokon</p>
                     </div>
                 </Carousel>
             </div>
