@@ -249,8 +249,8 @@ const Footer = () => {
             </div>
 
             {/* down section in footer */}
-            <div className='md:max-w-screen-2xl w-11/12 mx-auto mb-2 mt-7'>
-                <div className=' flex md:flex-row flex-col-reverse md:items-center items-start w-full border-y border-[#e1e1e1] py-7 pl-2'>
+            <div className='md:max-w-[1280px] custom-range:px-12 md:px-9 px-4 mx-auto mb-2 mt-7'>
+                <div className=' flex md:flex-row flex-col-reverse md:items-center items-start w-full border-y border-[#e1e1e1] py-7'>
                     <div className=' md:w-[20%] w-[100%] md:border-none border-t border-[#e1e1e1] md:pt-0 pt-7'>
                         <img src={footerLogo} width={80} height={80} alt="" />
                     </div>

@@ -21,7 +21,7 @@ const Home = () => {
             <Feestdagen></Feestdagen>
             <Hema></Hema>
             <Footer></Footer>
-            <div className="fixed z-[99999] right-8 bottom-12"> 
+            <div className="fixed z-[99999] right-6 bottom-6"> 
                 <ToTop></ToTop>
             </div>
         </div>
