@@ -11,10 +11,10 @@ import CardStyles from "../CardSlide/CardStyles";
 
 const Aanbieding = () => {
     return (
-        <div className='custom-range:px-9' >
+        <div className='' >
             <div className=" md:max-w-[1280px] max-w-full mx-auto  mt-20 ">
                 {/* heading */}
-                <div className=" flex justify-between items-center md:px-2 px-4">
+                <div className=" flex justify-between items-center custom-range:px-12 md:px-[16px]">
                     <div>
                         <h2 className=" font-sans font-bold text-3xl text-[#3a3a3a]">aanbiedingen bij HEMA fotoservice</h2>
                     </div>
@@ -23,7 +23,7 @@ const Aanbieding = () => {
                         <IoArrowForward></IoArrowForward>
                     </div>
                 </div>
-                <div className=' mt-8'>
+                <div className=' mt-8 custom-range:px-9 md:px-[10px]'>
                     <Carousel
                         additionalTransfrom={0}
                         arrows

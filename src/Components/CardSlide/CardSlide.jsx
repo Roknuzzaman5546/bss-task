@@ -26,8 +26,8 @@ const CardSlide = () => {
                 </div>
             </div>
             {/* carosul part */}
-            <div className='custom-range:px-9'>
-                <div className=' md:-mt-24 -mt-20 md:max-w-[1280px] mx-auto'>
+            <div className=''>
+                <div className=' md:-mt-24 -mt-20 md:max-w-[1280px] custom-range:px-9 md:px-[10px] mx-auto'>
                     <Carousel
                         additionalTransfrom={0}
                         arrows

@@ -3,7 +3,6 @@ import footerLogo from '../../assets/logo/logo.svg'
 import mixLogo from '../../assets/logo/nix-18.webp'
 import secureLogo from '../../assets/logo/secured-shopping.webp'
 import { LuSearch } from 'react-icons/lu'
-
 // import facebookLogo from '../../assets/footer logo/facebook.png' 
 
 const Footer = () => {
@@ -11,34 +10,32 @@ const Footer = () => {
         <div>
             {/* bg part in footer */}
             <div className='bg-[#9C1AFF] mt-16'>
-                <div className='md:max-w-[1280px] custom-range:px-12 mx-auto flex lg:flex-row md:flex-col-reverse flex-col-reverse lg:gap-0 md:gap-8 gap-8 justify-between items-start py-12'>
-                    <div className=' flex lg:flex-row md:flex-col flex-col items-start justify-between md:w-[52%] w-full lg:gap-0 md:gap-8 gap-8'>
-                        <div className=' flex flex-col items-start gap-2'>
-                            <h2 className=' text-[22px] font-bold text-white'>hulp nodig?</h2>
-                            <li className=' text-sm transition-colors duration-700 hover:text-[#775c8b] cursor-pointer text-white underline underline-offset-1'>mijn bestelling</li>
-                            <li className=' text-sm transition-colors duration-700 hover:text-[#775c8b] cursor-pointer text-white underline underline-offset-1'>bezorgen of afhalen</li>
-                            <li className=' text-sm transition-colors duration-700 hover:text-[#775c8b] cursor-pointer text-white underline underline-offset-1'>ruilen en retourneren</li>
-                        </div>
-                        <div className='  flex flex-col items-start gap-2' >
-                            <h2 className=' text-[22px] font-bold text-white'>andere vraag?</h2>
-                            <p className=' text-sm text-white'>ga naar <span className='underline underline-offset-1 transition-colors duration-700 hover:text-[#775c8b] cursor-pointer'>onze klantenservice</span></p>
-                        </div>
+                <div className='md:max-w-[1280px] custom-range:px-12 md:px-9 mx-auto flex lg:flex-row md:flex-col-reverse flex-col-reverse lg:gap-0 md:gap-8 gap-8 justify-between items-start py-12'>
+                    <div className=' w-[33.33%] flex flex-col items-start gap-2'>
+                        <h2 className=' text-[22px] font-bold text-white'>hulp nodig?</h2>
+                        <li className=' text-sm transition-colors duration-700 hover:text-[#775c8b] cursor-pointer text-white underline underline-offset-1'>mijn bestelling</li>
+                        <li className=' text-sm transition-colors duration-700 hover:text-[#775c8b] cursor-pointer text-white underline underline-offset-1'>bezorgen of afhalen</li>
+                        <li className=' text-sm transition-colors duration-700 hover:text-[#775c8b] cursor-pointer text-white underline underline-offset-1'>ruilen en retourneren</li>
                     </div>
-                    <div className=' lg:w-[33.33%] md:w-full w-full flex flex-col items-start justify-start gap-2'>
+                    <div className=' w-[33.33%] flex flex-col items-start gap-2' >
+                        <h2 className=' text-[22px] font-bold text-white'>andere vraag?</h2>
+                        <p className=' text-sm text-white'>ga naar <span className='underline underline-offset-1 transition-colors duration-700 hover:text-[#775c8b] cursor-pointer'>onze klantenservice</span></p>
+                    </div>
+                    <div className=' w-[33.33%] flex flex-col items-start justify-start gap-2'>
                         <h2 className=' flex justify-center items-center gap-2 text-[22px] font-bold text-white'>
                             <FaLocationDot />
                             <p>vind een winkel</p>
                         </h2>
                         <p className=' text-sm text-white'>zoek een winkel bij jou in de buurt</p>
-                        <div className=' flex justify-center items-center w-full lg:-ml-9 md:-ml-3 -ml-2 mt-1'>
-                            <input type="text" name="" id="" placeholder='vul postcode in plaats in' className=' lg:w-[85%] md:w-full w-full rounded-md h-[44px] outline-0 ring-0 bg-[#ffffff]  py-7 px-3 placeholder:text-[#767676] placeholder:text-sm' />
+                        <div className=' flex justify-center items-center w-full mt-1'>
+                            <input type="text" name="" id="" placeholder='vul postcode in plaats in' className=' w-full rounded-md h-[44px] outline-0 ring-0 bg-[#ffffff]  py-7 px-3 placeholder:text-[#767676] placeholder:text-sm' />
                             <LuSearch className=' -ml-9 text-xl' />
                         </div>
                     </div>
                 </div>
             </div>
             {/* media part for desktop */}
-            <div className='md:max-w-[1280px] custom-range:px-12 mx-auto lg:flex md:hidden hidden justify-between items-start py-12 px-2'>
+            <div className='md:max-w-[1280px] custom-range:px-12 md:px-5 mx-auto lg:flex md:hidden hidden justify-between items-start py-12'>
                 <div className=' w-[33.33%]'>
                     <h2 className=' text-[22px] font-bold text-[#323232] leading-8'>volg HEMA</h2>
                     <div className=' flex items-center gap-2 pt-5'>
@@ -76,7 +73,7 @@ const Footer = () => {
                 </div>
             </div>
             {/* media part for mobile and tablet */}
-            <div className='md:max-w-[1280px] custom-range:px-12 mx-auto lg:hidden md:flex flex-col-reverse flex justify-between items-start py-12 px-2'>
+            <div className='md:max-w-[1280px] custom-range:px-12 md:px-9 mx-auto lg:hidden md:flex flex-col-reverse flex justify-between items-start py-12 px-2'>
                 <div className=' lg:w-[33.33%] md:w-full w-full pt-7'>
                     <h2 className=' text-[22px] font-bold text-[#323232] leading-8'>makkelijk betalen*</h2>
                     <div className=' flex items-center gap-2 pt-3 pb-3'>
@@ -114,60 +111,62 @@ const Footer = () => {
                 </div>
             </div>
             {/* text part for desktop device */}
-            <div className=' md:max-w-[1280px] custom-range:px-12 mx-auto lg:flex md:flex hidden justify-between items-start px-2 font-hurme border-t border-[#e1e1e1] pt-12'>
-                <div>
-                    <h2 className=' text-xl font-bold text-[#323232] mb-2 leading-6 font-hurme'>populaire categorieën</h2>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>dameskleding</p>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>kinderkleding</p>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>babykleding</p>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>beddengoed</p>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>woonaccessoires</p>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>handdoeken </p>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>raamdecoratie</p>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>speelgoed</p>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>gebak</p>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>koffie</p>
-                </div>
-                <div>
-                    <h2 className=' text-xl font-bold text-[#323232] mb-2 leading-6 font-hurme'>meer voor HEMA fans</h2>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>HEMA app</p>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>HEMA pas</p>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>lees onze folders</p>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>folder via Whatsapp ontvangen</p>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>HEMA op social media</p>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>HEMA herontwerpwedstrijd</p>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>HEMA fotoservice</p>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>HEMA cadeaukaarten</p>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>HEMA tickets</p>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>HEMA verzekeringen</p>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>inspiratie</p>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>nieuws</p>
+            <div className=' md:max-w-[1280px] custom-range:px-12 md:px-5 mx-auto'>
+                <div className=' lg:flex md:flex hidden justify-between items-start font-hurme border-t border-[#e1e1e1] pt-12'>
+                    <div>
+                        <h2 className=' text-xl font-bold text-[#323232] mb-2 leading-6 font-hurme'>populaire categorieën</h2>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>dameskleding</p>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>kinderkleding</p>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>babykleding</p>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>beddengoed</p>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>woonaccessoires</p>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>handdoeken </p>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>raamdecoratie</p>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>speelgoed</p>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>gebak</p>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>koffie</p>
+                    </div>
+                    <div>
+                        <h2 className=' text-xl font-bold text-[#323232] mb-2 leading-6 font-hurme'>meer voor HEMA fans</h2>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>HEMA app</p>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>HEMA pas</p>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>lees onze folders</p>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>folder via Whatsapp ontvangen</p>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>HEMA op social media</p>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>HEMA herontwerpwedstrijd</p>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>HEMA fotoservice</p>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>HEMA cadeaukaarten</p>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>HEMA tickets</p>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>HEMA verzekeringen</p>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>inspiratie</p>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>nieuws</p>
 
-                </div>
-                <div>
-                    <h2 className=' text-xl font-bold text-[#323232] mb-2 leading-6 font-hurme'>over HEMA</h2>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>over ons bedrijf</p>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>werken bij HEMA</p>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>goed idee van HEMA</p>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>nieuws en pers</p>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>HEMA geschiedenis</p>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>HEMA zakelijk</p>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>klantenservice</p>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>actievoorwaarden</p>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>saldo cadeaukaart opvragen</p>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>partnerships</p>
-                </div>
-                <div>
-                    <h2 className=' text-xl font-bold text-[#323232] mb-2 leading-6 font-hurme'>internationaal</h2>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>HEMA België</p>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>HEMA Duitsland</p>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>HEMA Frankrijk</p>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>HEMA Oostenrijk</p>
-                    <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>HEMA Verenigde Arabische Emiraten</p>
+                    </div>
+                    <div>
+                        <h2 className=' text-xl font-bold text-[#323232] mb-2 leading-6 font-hurme'>over HEMA</h2>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>over ons bedrijf</p>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>werken bij HEMA</p>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>goed idee van HEMA</p>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>nieuws en pers</p>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>HEMA geschiedenis</p>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>HEMA zakelijk</p>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>klantenservice</p>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>actievoorwaarden</p>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>saldo cadeaukaart opvragen</p>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>partnerships</p>
+                    </div>
+                    <div>
+                        <h2 className=' text-xl font-bold text-[#323232] mb-2 leading-6 font-hurme'>internationaal</h2>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>HEMA België</p>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>HEMA Duitsland</p>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>HEMA Frankrijk</p>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>HEMA Oostenrijk</p>
+                        <p className=' text-sm transition-colors duration-300 cursor-pointer text-[#323232] hover:underline underline-offset-2 mb-2 font-hurme'>HEMA Verenigde Arabische Emiraten</p>
+                    </div>
                 </div>
             </div>
             {/* text part formobile and tablet */}
-            <div className=' md:max-w-[1280px] custom-range:px-12 mx-auto lg:hidden md:hidden flex justify-between items-start px-2 font-hurme border-t border-[#e1e1e1] pt-12'>
+            <div className=' md:max-w-[1280px] custom-range:px-12 md:px-9 mx-auto lg:hidden md:hidden flex justify-between items-start px-2 font-hurme border-t border-[#e1e1e1] pt-12'>
                 <div>
                     <div>
                         <h2 className=' text-xl font-bold text-[#323232] mb-2 leading-6 font-hurme'>populaire categorieën</h2>

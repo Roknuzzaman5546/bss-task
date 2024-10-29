@@ -19,7 +19,7 @@ import nextImg from '../../assets/shared/Next.jpg'
 
 const Hema = () => {
     return (
-        <div className="md:max-w-[1280px] custom-range:px-9 mx-auto mt-20">
+        <div className="md:max-w-[1280px] custom-range:px-9 md:px-[10px] mx-auto mt-20">
             {/* heading */}
             <div className=" flex justify-between items-center px-2">
                 <div>

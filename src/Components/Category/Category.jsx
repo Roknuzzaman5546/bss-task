@@ -20,7 +20,7 @@ import WithStyles from './WithStyles';
 
 const Category = () => {
     return (
-        <div className='  custom-range:px-9 px-5 '>
+        <div className='custom-range:px-9 lg:px-[52px] md:px-3'>
             <div className=' mt-[25px] max-w-[1280px] mx-auto overflow-visible'>
                 <Carousel
                     additionalTransfrom={0}
@@ -42,36 +42,28 @@ const Category = () => {
                     renderDotsOutside={false}
                     responsive={{
                         desktop: {
-                            breakpoint: {
-                                max: 3000, // for large desktop devices
-                                min: 1440 // or whatever large desktop starts at
-                            },
+                            breakpoint: { max: 3000, min: 1350 },
                             items: 8,
-                            partialVisibilityGutter: 40
+                            partialVisibilityGutter: 40,
+                            slidesToSlide: 8 // Number of slides to slide at once on desktop
                         },
                         laptop: {
-                            breakpoint: {
-                                max: 1440, // for laptop
-                                min: 1024
-                            },
+                            breakpoint: { max: 1350, min: 1024 },
                             items: 7,
-                            partialVisibilityGutter: 30
+                            partialVisibilityGutter: 30,
+                            slidesToSlide: 7 // Number of slides to slide at once on laptop
                         },
                         tablet: {
-                            breakpoint: {
-                                max: 1024, // for tablet
-                                min: 700
-                            },
+                            breakpoint: { max: 1024, min: 700 },
                             items: 5,
-                            partialVisibilityGutter: 30
+                            partialVisibilityGutter: 30,
+                            slidesToSlide: 5 // Number of slides to slide at once on tablet
                         },
                         mobile: {
-                            breakpoint: {
-                                max: 700, // for mobile
-                                min: 0
-                            },
-                            items: 3.5, // for 3.5 items visible
-                            partialVisibilityGutter: 20
+                            breakpoint: { max: 700, min: 0 },
+                            items: 3.5,
+                            partialVisibilityGutter: 20,
+                            slidesToSlide: 3 // Number of slides to slide at once on mobile
                         }
                     }}
                     rewind={false}
@@ -80,7 +72,6 @@ const Category = () => {
                     shouldResetAutoplay
                     showDots={false}
                     sliderClass=""
-                    slidesToSlide={7}
                     swipeable
                     customLeftArrow={<CustomLeftArrow />}
                     customRightArrow={<CustomRightArrow />}
