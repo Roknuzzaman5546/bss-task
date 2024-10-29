@@ -23,11 +23,11 @@ const Hema = () => {
             {/* heading */}
             <div className=" flex justify-between items-center px-3">
                 <div>
-                    <h2 className=" font-sans font-bold text-2xl text-[#3a3a3a] text-ellipsis">spaar voor leuke {"extra's"}</h2>
+                    <h2 className=" font-hurme font-bold md:text-3xl text-2xl text-[#3a3a3a] text-ellipsis">spaar voor leuke {"extra's"}</h2>
                     <p className=" text-xs mt-2">wissel je punten in voor gratis producten</p>
                 </div>
-                <div className=" flex justify-center items-center gap-2 font-sans">
-                    <a className="hover:border-b-[1.5px] border-black text-xs font-semibold cursor-pointer md:flex hidden">bekijk alles</a>
+                <div className=" md:flex hidden justify-center items-center gap-2 font-sans">
+                    <a className="hover:border-b-[1.5px] border-black text-xs font-semibold cursor-pointer">bekijk alles</a>
                     <IoArrowForward></IoArrowForward>
                 </div>
             </div>

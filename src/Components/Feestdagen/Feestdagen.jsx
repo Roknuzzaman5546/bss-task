@@ -13,7 +13,7 @@ const Feestdagen = () => {
                 {/* heading */}
                 <div className=" flex justify-between items-center px-3">
                     <div>
-                        <h2 className=" font-sans font-bold text-3xl text-[#3a3a3a]">maak je klaar voor de feestdagen</h2>
+                        <h2 className=" font-hurme font-bold md:text-3xl text-2xl text-[#3a3a3a]">maak je klaar voor de feestdagen</h2>
                     </div>
                 </div>
                 <div className=' mt-5 '>

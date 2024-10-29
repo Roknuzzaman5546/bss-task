@@ -16,10 +16,10 @@ const Aanbieding = () => {
                 {/* heading */}
                 <div className=" flex justify-between items-center custom-range:px-12 md:px-[16px] px-4">
                     <div>
-                        <h2 className=" font-hurme font-bold text-3xl text-[#252525]">aanbiedingen bij HEMA fotoservice</h2>
+                        <h2 className=" font-hurme font-bold md:text-3xl text-2xl text-[#252525]">aanbiedingen bij HEMA fotoservice</h2>
                     </div>
-                    <div className=" flex justify-center items-center gap-2 font-sans">
-                        <a className="hover:border-b-[1.5px] border-black text-xs font-semibold cursor-pointer md:flex hidden">bekijk alles</a>
+                    <div className=" md:flex hidden justify-center items-center gap-2 font-sans">
+                        <a className="hover:border-b-[1.5px] border-black text-xs font-semibold cursor-pointer ">bekijk alles</a>
                         <IoArrowForward></IoArrowForward>
                     </div>
                 </div>
