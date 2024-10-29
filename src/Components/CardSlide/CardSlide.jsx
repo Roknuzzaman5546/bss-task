@@ -143,7 +143,7 @@ const CardSlide = () => {
                         </div>
                         <div className=' flex flex-col items-center justify-center'>
                             <NextCardStyle
-                                nextText={'meer anmbiedingen'}
+                                nextText={'bekijk alls'}
                                 image={nextImg6} />
                         </div>
                     </Carousel>

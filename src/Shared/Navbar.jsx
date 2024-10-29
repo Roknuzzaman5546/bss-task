@@ -46,7 +46,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 {/* down menu */}
-                <div className='flex xl:py-[16px] lg:py-[16px] md:py-[15px] py-[15px] justify-between items-center custom-range:px-12 px-5  max-w-[1280px] mx-auto'>
+                <div className='flex xl:py-[15px] lg:py-[16px] md:py-[15px] py-[15px] justify-between items-center custom-range:px-12 px-5  max-w-[1280px] mx-auto'>
                     <div className='flex items-center '>
                         <img className='mr-[102px] ' src={logo} height={56} width={56} alt="" />
                     </div>

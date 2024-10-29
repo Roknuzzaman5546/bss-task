@@ -6,7 +6,7 @@ const NextCardStyle = ({ image, nextText }) => {
         <div>
             <div className="overflow-hidden rounded-lg cursor-pointer relative next-hover">
                 <img className="rounded-lg transition-transform duration-500 ease-in-out hover:scale-110 hover:shadow-lg overflow-hidden " src={image} alt="" />
-                <div className=" absolute top-[25%] left-[23%] text-center">
+                <div className=" absolute lg:top-[25%] top-12 lg:left-[32%] left-16 text-center">
                     <button className="next-butt border-2 border-[#323232] p-3 transition-colors duration-500 rounded-full text-[#323232] mt-11">
                         <IoArrowForward className="icon text-3xl"></IoArrowForward>
                     </button>

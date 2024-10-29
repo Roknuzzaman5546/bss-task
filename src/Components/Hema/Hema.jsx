@@ -21,7 +21,7 @@ const Hema = () => {
     return (
         <div className="md:max-w-[1280px] custom-range:px-9 md:px-[10px] mx-auto mt-20">
             {/* heading */}
-            <div className=" flex justify-between items-center px-2">
+            <div className=" flex justify-between items-center px-3">
                 <div>
                     <h2 className=" font-sans font-bold text-2xl text-[#3a3a3a] text-ellipsis">spaar voor leuke {"extra's"}</h2>
                     <p className=" text-xs mt-2">wissel je punten in voor gratis producten</p>
@@ -132,7 +132,7 @@ const Hema = () => {
                             image={cardcarosulImg6} />
                     </div><div className=' flex flex-col items-center justify-center'>
                         <NextCardStyle
-                            nextText={'bekijk alls flex-col'}
+                            nextText={'bekijk alls'}
                             image={nextImg} />
                     </div>
                 </Carousel>

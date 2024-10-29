@@ -142,7 +142,7 @@ const MachineProduct = () => {
                     </div>
                     <div className=' flex flex-col items-center justify-center'>
                         <NextCardStyle
-                            nextText={'bekijk alls bekijk'}
+                            nextText={'bekijk alls'}
                             image={nextImg} />
                     </div>
                 </Carousel>

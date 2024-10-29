@@ -10,7 +10,8 @@ const Footer = () => {
         <div>
             {/* bg part in footer */}
             <div className='bg-[#9C1AFF] mt-16'>
-                <div className='md:max-w-[1280px] custom-range:px-12 md:px-9 mx-auto flex lg:flex-row md:flex-col-reverse flex-col-reverse lg:gap-0 md:gap-8 gap-8 justify-between items-start py-12'>
+                {/* for desktop device */}
+                <div className='md:max-w-[1280px] custom-range:px-12 md:px-9 mx-auto lg:flex flex-row md:hidden hidden lg:gap-0 md:gap-8 gap-8 justify-between items-start py-12'>
                     <div className=' w-[33.33%] flex flex-col items-start gap-2'>
                         <h2 className=' text-[22px] font-bold text-white'>hulp nodig?</h2>
                         <li className=' text-sm transition-colors duration-700 hover:text-[#775c8b] cursor-pointer text-white underline underline-offset-1'>mijn bestelling</li>
@@ -31,6 +32,30 @@ const Footer = () => {
                             <input type="text" name="" id="" placeholder='vul postcode in plaats in' className=' w-full rounded-md h-[44px] outline-0 ring-0 bg-[#ffffff]  py-7 px-3 placeholder:text-[#767676] placeholder:text-sm' />
                             <LuSearch className=' -ml-9 text-xl' />
                         </div>
+                    </div>
+                </div>
+                {/* for mobile device */}
+                <div className='md:max-w-[1280px] custom-range:px-12 md:px-9 px-4 mx-auto lg:hidden md:flex flex flex-col lg:gap-0 md:gap-8 gap-8 justify-start items-start py-12'>
+                    <div className=' w-full flex flex-col items-start justify-start gap-2 md:-ml-3'>
+                        <h2 className=' flex justify-center items-center gap-2 text-[22px] font-bold text-white'>
+                            <FaLocationDot />
+                            <p>vind een winkel</p>
+                        </h2>
+                        <p className=' text-sm text-white'>zoek een winkel bij jou in de buurt</p>
+                        <div className=' flex justify-center items-center w-full mt-1 -ml-2'>
+                            <input type="text" name="" id="" placeholder='vul postcode in plaats in' className=' w-full rounded-md h-[44px] outline-0 ring-0 bg-[#ffffff]  py-7 px-3 placeholder:text-[#767676] placeholder:text-sm' />
+                            <LuSearch className=' -ml-9 text-xl' />
+                        </div>
+                    </div>
+                    <div className=' w-full flex flex-col items-start gap-2 md:ml-0 ml-3'>
+                        <h2 className=' text-[22px] font-bold text-white'>hulp nodig?</h2>
+                        <li className=' text-sm transition-colors duration-700 hover:text-[#775c8b] cursor-pointer text-white underline underline-offset-1'>mijn bestelling</li>
+                        <li className=' text-sm transition-colors duration-700 hover:text-[#775c8b] cursor-pointer text-white underline underline-offset-1'>bezorgen of afhalen</li>
+                        <li className=' text-sm transition-colors duration-700 hover:text-[#775c8b] cursor-pointer text-white underline underline-offset-1'>ruilen en retourneren</li>
+                    </div>
+                    <div className=' w-full flex flex-col items-start gap-2 md:-ml-3' >
+                        <h2 className=' text-[22px] font-bold text-white'>andere vraag?</h2>
+                        <p className=' text-sm text-white'>ga naar <span className='underline underline-offset-1 transition-colors duration-700 hover:text-[#775c8b] cursor-pointer'>onze klantenservice</span></p>
                     </div>
                 </div>
             </div>
@@ -73,7 +98,7 @@ const Footer = () => {
                 </div>
             </div>
             {/* media part for mobile and tablet */}
-            <div className='md:max-w-[1280px] custom-range:px-12 md:px-9 mx-auto lg:hidden md:flex flex-col-reverse flex justify-between items-start py-12 px-2'>
+            <div className='md:max-w-[1280px] custom-range:px-12 md:px-9 px-4  mx-auto lg:hidden md:flex flex-col-reverse flex justify-between items-start py-12'>
                 <div className=' lg:w-[33.33%] md:w-full w-full pt-7'>
                     <h2 className=' text-[22px] font-bold text-[#323232] leading-8'>makkelijk betalen*</h2>
                     <div className=' flex items-center gap-2 pt-3 pb-3'>
@@ -166,7 +191,7 @@ const Footer = () => {
                 </div>
             </div>
             {/* text part formobile and tablet */}
-            <div className=' md:max-w-[1280px] custom-range:px-12 md:px-9 mx-auto lg:hidden md:hidden flex justify-between items-start px-2 font-hurme border-t border-[#e1e1e1] pt-12'>
+            <div className=' md:max-w-[1280px] custom-range:px-12 md:px-9 px-4 mx-auto lg:hidden md:hidden flex justify-between items-start font-hurme border-t border-[#e1e1e1] pt-12'>
                 <div>
                     <div>
                         <h2 className=' text-xl font-bold text-[#323232] mb-2 leading-6 font-hurme'>populaire categorieën</h2>

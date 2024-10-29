@@ -14,9 +14,9 @@ const Aanbieding = () => {
         <div className='' >
             <div className=" md:max-w-[1280px] max-w-full mx-auto  mt-20 ">
                 {/* heading */}
-                <div className=" flex justify-between items-center custom-range:px-12 md:px-[16px]">
+                <div className=" flex justify-between items-center custom-range:px-12 md:px-[16px] px-4">
                     <div>
-                        <h2 className=" font-sans font-bold text-3xl text-[#3a3a3a]">aanbiedingen bij HEMA fotoservice</h2>
+                        <h2 className=" font-hurme font-bold text-3xl text-[#252525]">aanbiedingen bij HEMA fotoservice</h2>
                     </div>
                     <div className=" flex justify-center items-center gap-2 font-sans">
                         <a className="hover:border-b-[1.5px] border-black text-xs font-semibold cursor-pointer md:flex hidden">bekijk alles</a>
@@ -111,7 +111,7 @@ const Aanbieding = () => {
                         </div>
                         <div className=' flex flex-col items-center justify-center'>
                             <NextCardStyle
-                                nextText={'bekijk alls van HEMA foto'}
+                                nextText={'bekijk alls'}
                                 image={nextImg} />
                         </div>
                     </Carousel>
