@@ -52,6 +52,7 @@ const Navbar = () => {
                     </div>
                     <div className=' lg:flex md:hidden hidden justify-between items-center gap-2 mr-[33px] '>
                         <HiOutlineBars3 className=' text-[25px] font-bold text-[#292929]' />
+                        {/* <FontAwesomeIcon icon={faBars} className='' /> */}
                         <h2 className=' font-semibold text-sm text-[#323232]'>categorieën</h2>
                         <IoIosArrowDown className='text-[#323232]' />
                     </div>
