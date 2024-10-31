@@ -27,7 +27,7 @@ const Navbar = () => {
 
     return (
         <div className={`w-full sticky top-0 left-0 right-0 bg-white mx-auto transition-all duration-500 ease-in-out z-[310] ${isNavbarJumping ? "shadow-md" : "transition-all duration-300 ease-in-out"}`}>
-            {/* for destop device */}
+            {/* for destop & tab device */}
             <div className={`md:block hidden`}>
                 {/* Upper menu */}
                 <div className={`max-w-[1280px] mx-auto custom-range:px-12 px-5 pt-[12px] ${isNavbarJumping ? "h-0 opacity-0 hidden transition-all duration-300 ease-in-out" : "h-auto opacity-100"}`}>
@@ -46,7 +46,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 {/* down menu */}
-                <div className='flex xl:py-[15px] lg:py-[16px] md:py-[15px] py-[15px] justify-between items-center custom-range:px-12 px-5  max-w-[1280px] mx-auto'>
+                <div className={`flex ${isNavbarJumping ? 'xl:py-[16px]' : 'xl:py-[15px]'}  lg:py-[16px] md:py-[15px] py-[15px] justify-between items-center custom-range:px-12 px-5  max-w-[1280px] mx-auto`}>
                     <div className='flex items-center '>
                         <img className='mr-[102px] ' src={logo} height={56} width={56} alt="" />
                     </div>
