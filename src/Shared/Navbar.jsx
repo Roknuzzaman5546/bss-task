@@ -11,7 +11,7 @@ import { FiSearch } from 'react-icons/fi';
 
 const Navbar = () => {
     const [isNavbarJumping, setIsNavbarJumping] = useState(false);
-    // for jumping effect code -sadia
+    // for jumping effect
     useEffect(() => {
         const handleScroll = () => {
             const scrollY = window.scrollY;
