@@ -92,7 +92,7 @@ const Footer = () => {
                     <h2 className=' text-[22px] font-bold text-[#323232] leading-8'>altijd op de hoogte van onze acties</h2>
                     <p className=' text-sm text-[#323232] font-thin pt-5 pb-1'>Schrijf je in voor de HEMA nieuwsbrief. Meermaals per week de laatste (online) aanbiedingen. Krijg direct 10% korting na aanmelding. Afmelden kan altijd.</p>
                     <div className='flex gap-2 pt-2'>
-                        <input className=' rounded-lg border  h-[56px] w-[90%] outline-0 ring-0 bg-[#FFFFFF80]  pl-4  placeholder:text-[#767676] placeholder:text-sm' placeholder='e-mailadress*' type="text" name="" id="" />
+                        <input className=' rounded-lg border  h-[56px] w-[90%] ring-0 bg-[#FFFFFF80]  pl-4  placeholder:text-[#767676] placeholder:text-sm focus:outline-none' placeholder='e-mailadress*' type="text" name="" id="" />
                         <button className=' bg-[#00838c] hover:bg-[#01565b] p-4 h-[56px] font-bold text-white text-center inline-block rounded-lg'>aanmelden</button>
                     </div>
                 </div>
@@ -130,7 +130,7 @@ const Footer = () => {
                     <h2 className=' text-[22px] font-bold text-[#323232] leading-8'>altijd op de hoogte van onze acties</h2>
                     <p className=' text-sm text-[#323232] font-thin pt-3 pb-1'>Schrijf je in voor de HEMA nieuwsbrief. Meermaals per week de laatste (online) aanbiedingen. Krijg direct 10% korting na aanmelding. Afmelden kan altijd.</p>
                     <div className='flex gap-2 pt-2'>
-                        <input className=' rounded-lg border  h-[56px] w-[90%] outline-0 ring-0 bg-[#FFFFFF80]  pl-4  placeholder:text-[#767676] placeholder:text-sm' placeholder='e-mailadress*' type="text" name="" id="" />
+                        <input className=' rounded-lg border  h-[56px] w-[90%] ring-0 bg-[#FFFFFF80]  pl-4  placeholder:text-[#767676] placeholder:text-sm focus:outline-none' placeholder='e-mailadress*' type="text" name="" id="" />
                         <button className=' bg-[#00838c] hover:bg-[#01565b] p-4 h-[56px] font-bold text-white text-center inline-block rounded-lg'>aanmelden</button>
                     </div>
                 </div>

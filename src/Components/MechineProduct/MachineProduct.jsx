@@ -177,7 +177,7 @@ const CustomRightArrow = ({ onClick }) => {
 const arrowStyles = {
     left: {
         position: 'absolute',
-        top: '40%',
+        top: '45%',
         left: '0',
         transform: 'translateY(-50%)',
         backgroundColor: '#fff',
@@ -190,7 +190,7 @@ const arrowStyles = {
     },
     right: {
         position: 'absolute',
-        top: '40%',
+        top: '45%',
         right: '0',
         transform: 'translateY(-50%)',
         backgroundColor: '#fff',
