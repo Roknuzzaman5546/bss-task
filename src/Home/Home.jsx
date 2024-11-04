@@ -1,7 +1,6 @@
 import Aanbieding from "../Components/Aanbieding/Aanbieding";
 import CardSlide from "../Components/CardSlide/CardSlide";
 import Category from "../Components/Category/Category";
-import DemoCheck from "../Components/DemoCheck/DemoCheck";
 import Feestdagen from "../Components/Feestdagen/Feestdagen";
 import Hema from "../Components/Hema/Hema";
 import MachineProduct from "../Components/MechineProduct/MachineProduct";
@@ -16,7 +15,6 @@ const Home = () => {
             <Category></Category>
             <CardSlide></CardSlide>
             <Aanbieding></Aanbieding>
-            <DemoCheck></DemoCheck>
             <MachineProduct></MachineProduct>
             <Feestdagen></Feestdagen>
             <Hema></Hema>
