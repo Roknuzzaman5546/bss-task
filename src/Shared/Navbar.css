@@ -58,6 +58,13 @@
   color: #000000;
 }
 
+.category-info {
+  display: none;
+}
+
+.category:hover>.category-info {
+  display: block;
+}
 
 /* @keyframes jump {
 

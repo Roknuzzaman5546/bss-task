@@ -50,11 +50,11 @@ const Navbar = () => {
                     <div className='flex items-center '>
                         <img className='mr-[102px] ' src={logo} height={56} width={56} alt="" />
                     </div>
-                    <div className=' lg:flex md:hidden hidden justify-between items-center gap-2 mr-[33px] '>
+                    <div className={` lg:flex md:hidden hidden justify-between items-center gap-2 mr-[33px] `}>
                         <HiOutlineBars3 className=' text-[25px] font-bold text-[#292929]' />
                         {/* <FontAwesomeIcon icon={faBars} className='' /> */}
                         <h2 className=' font-semibold text-sm text-[#323232]'>categorieën</h2>
-                        <IoIosArrowDown className='text-[#323232]' />
+                        <IoIosArrowDown className='text-[#323232] transition-transform duration-500 hover:rotate-180' />
                     </div>
                     <div className=' flex justify-center items-center w-full mr-[55px]'>
                         <input type="text" name="" id="" placeholder='Waar be je naar op Zoak?' className=' rounded-3xl h-[44px] w-full outline-0 ring-0 bg-[#efefef] hover:bg-[#dfdfdf] py-3 px-6 placeholder:text-[#767676] placeholder:lowercase placeholder:font-hurme font-hurme placeholder:text-[16px] placeholder:leading-5 placeholder:font-normal transition-colors duration-700' />
