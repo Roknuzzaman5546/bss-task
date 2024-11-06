@@ -7,8 +7,12 @@ Bss hema is a e commerce website built with  Tailwind Css React.js. It aims to p
 
 ## Demo Images
 
-![img 1](https://i.ibb.co.com/ZX3T6hw/Screenshot-475.png)
-![img 2](https://i.ibb.co.com/BfR0gJW/Screenshot-476.png)
+<p align="center">
+  <img src="https://i.ibb.co/ZX3T6hw/Screenshot-475.png" alt="img 1" width="45%">
+  <img src="https://i.ibb.co/BfR0gJW/Screenshot-476.png" alt="img 2" width="45%">
+  <img src="https://i.ibb.co.com/dWHTxb2/Screenshot-478.png" alt="img 2" width="45%">
+  <img src="https://i.ibb.co.com/cX89GGJ/Screenshot-479.png" alt="img 2" width="45%"> 
+</p>
 
 ## Table of Contents
 
