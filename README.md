@@ -2,10 +2,10 @@
 ## Demo Images
 
 <p align="center">
-  <img src="https://i.ibb.co/ZX3T6hw/Screenshot-475.png" alt="img 1" width="25%" style="margin-right: 5px;">
-  <img src="https://i.ibb.co/BfR0gJW/Screenshot-476.png" alt="img 2" width="25%" style="margin-right: 5px;">
-  <img src="https://i.ibb.co/dWHTxb2/Screenshot-478.png" alt="img 3" width="25%" style="margin-right: 5px;">
-  <img src="https://i.ibb.co/cX89GGJ/Screenshot-479.png" alt="img 4" width="25%">
+  <img src="https://i.ibb.co/ZX3T6hw/Screenshot-475.png" alt="img 1" width="22%" style="margin-right: 3px;">
+  <img src="https://i.ibb.co.com/PYt5kzz/Screenshot-480.png" alt="img 2" width="22%" style="margin-right: 3px;">
+  <img src="https://i.ibb.co/dWHTxb2/Screenshot-478.png" alt="img 3" width="22%" style="margin-right: 3px;">
+  <img src="https://i.ibb.co/cX89GGJ/Screenshot-479.png" alt="img 4" width="22%">
 </p>
 
 ## Heading
@@ -28,11 +28,11 @@ Check out the live website: [Hema Live link](https://bss-hema.web.app)
 
 ## Technologies
 
-Tailwind Css, React.js, react-router-dom, JavaScript
+- Tailwind Css, React.js, react-router-dom, JavaScript
 ##### Tools 
-GitHub, firebase, vscode
+- GitHub, firebase, vscode
 ##### packages
-daisyui, react-multi-carousel, swiper, react-icons, fontawesome.
+- daisyui, react-multi-carousel, swiper, react-icons, fontawesome.
 
 ## Installation
 
@@ -49,9 +49,9 @@ Make sure you have the following installed:
 1. Clone the repository:
    Client site: https://github.com/Roknuzzaman5546/bss-task
 2. Run this commands for install all packages:
-   npm install
-   npm run dev (for run project)    
-And open port which port start after run npm dev
+   - npm install
+   - npm run dev (for run project)    
+And open port which port start after run npm dev.
 
 
 ## Contact

@@ -59,11 +59,11 @@
 }
 
 .category-info {
-  display: none;
+  margin-top: -200px;
 }
 
 .category:hover>.category-info {
-  display: block;
+  margin-top: 50px;
 }
 
 /* @keyframes jump {
