@@ -21,7 +21,7 @@ import './Navbar.css'
 import { BsHandbag } from 'react-icons/bs';
 import { HiOutlineBars3 } from 'react-icons/hi2';
 import { LuSearch } from 'react-icons/lu';
-import { IoIosArrowDown } from 'react-icons/io';
+import { IoIosArrowDown, IoIosArrowForward } from 'react-icons/io';
 import { useEffect, useState } from 'react';
 import { FiSearch } from 'react-icons/fi';
 
@@ -67,28 +67,37 @@ const Navbar = () => {
                         <div className='flex items-center '>
                             <img className='mr-[102px]' src={logo} height={56} width={56} alt="" />
                         </div>
-                        <div className='category group cursor-pointer'>
+                        <div className=' group cursor-pointer'>
                             <div className={`lg:flex md:hidden hidden justify-between items-center gap-2 mr-[33px] overflow-hidden z-10 h-[88px]`}>
                                 <HiOutlineBars3 className='text-[25px] font-bold text-[#292929]' />
                                 <h2 className='font-semibold text-sm text-[#323232]'>categorieën</h2>
                                 <IoIosArrowDown className='text-[#323232] transition-transform duration-500 group-hover:rotate-180' />
                             </div>
-                            <div className=" category-info bottom-0 left-0 top-[88px] w-full bg-white transition-transform duration-700 transform scale-y-0 group-hover:scale-y-90 origin-top h-[450px] absolute">
+                            <div className={`bottom-0 left-0 ${isNavbarJumping ? 'top-[88px]' : 'top-[130px]'} w-full bg-white transition-transform duration-700 transform scale-y-0 group-hover:scale-y-100 origin-top h-[450px] absolute`}>
                                 <div className="max-w-[1280px] mx-auto px-12 ">
                                     <div className='border-t-2 flex justify-between items-start'>
                                         <div className=' border-r-2 w-[33.33%]'>
-                                            <h2 className='font-bold font-hurme leading-5 pt-5'>categorieën</h2>
-                                            <div className=' flex justify-between items-center gap-2'>
-                                                <img src={categoryImg2} width={36} height={39} className=' rounded-full' alt="" />
-                                                <p className=' border-b pt-2'>sinterklass</p>
+                                            <h2 className='font-bold font-hurme leading-5 pt-4 pb-6'>categorieën</h2>
+                                            <div className=' flex justify-between items-center gap-7 hover:bg-[#efefef]'>
+                                                <div className=' w-full flex justify-start items-center gap-7'>
+                                                    <img src={categoryImg2} width={39} height={39} className=' rounded-full' alt="" />
+                                                    <p className=' w-full border-b -mb-4 pb-4 font-sans mr-4'>sinterklass</p>
+                                                </div>
+                                                <div>
+                                                    <IoIosArrowForward></IoIosArrowForward>
+                                                </div>
                                             </div>
-                                            <div className=' flex justify-between items-center gap-2 mt-5'>
-                                                <img src={categoryImg2} width={36} height={39} className=' rounded-full' alt="" />
+                                            <div className=' flex justify-start items-center gap-7 mt-7'>
+                                                <img src={categoryImg2} width={39} height={39} className=' rounded-full' alt="" />
                                                 <p>Karest</p>
                                             </div>
                                         </div>
-                                        <div></div>
-                                        <div></div>
+                                        <div className=' border-r-2 w-[33.33%]'>
+
+                                        </div>
+                                        <div className=' border-r-2 w-[33.33%]'>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
