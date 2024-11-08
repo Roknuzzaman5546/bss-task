@@ -1,0 +1,316 @@
+[
+    {
+        "id": 1,
+        "img": "https://i.ibb.co/ZThQzZM/HEMA-2024-categoryslider-280x280-keuken.webp",
+        "title": "Kitchen Essentials",
+        "subtitles": [
+            {
+                "name": "Cookware",
+                "items": []
+            },
+            {
+                "name": "Cookware",
+                "items": [
+                    "Pots",
+                    "Pans",
+                    "Skillets",
+                    "Woks",
+                    "Woks"
+                ]
+            },
+            {
+                "name": "Utensils",
+                "items": []
+            },
+            {
+                "name": "Utensils",
+                "items": [
+                    "Spoons",
+                    "Knives",
+                    "Spatulas",
+                    "Tongs",
+                    "Spatulas"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "img": "https://i.ibb.co/0ch4Cxw/HEMA-2024-categoryslider-280x280-vriendenprijsjes.webp",
+        "title": "Special Friend Discounts",
+        "subtitles": [
+            {
+                "name": "Member Exclusives",
+                "items": []
+            },
+            {
+                "name": "Member Exclusives",
+                "items": [
+                    "Apparel Discounts",
+                    "Home Goods",
+                    "Seasonal Specials"
+                ]
+            },
+            {
+                "name": "Events",
+                "items": []
+            },
+            {
+                "name": "Events",
+                "items": [
+                    "Workshops",
+                    "Meetups",
+                    "Product Launches"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "img": "https://i.ibb.co/zJqJ2zm/HEMA-2024-categoryslider-280x280-wk09-makeup.webp",
+        "title": "Beauty & Makeup",
+        "subtitles": [
+            {
+                "name": "Face Makeup",
+                "items": []
+            },
+            {
+                "name": "Face Makeup",
+                "items": [
+                    "Foundations",
+                    "Concealers",
+                    "Blushes"
+                ]
+            },
+            {
+                "name": "Eye Makeup",
+                "items": []
+            },
+            {
+                "name": "Eye Makeup",
+                "items": [
+                    "Mascaras",
+                    "Eyeshadows",
+                    "Eyeliner"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "img": "https://i.ibb.co/tM7DBrT/HEMA-2024-categoryslider-280x280-wk37-cadeaus-feest.webp",
+        "title": "Gifts & Celebrations",
+        "subtitles": [
+            {
+                "name": "Gift Sets",
+                "items": []
+            },
+            {
+                "name": "Gift Sets",
+                "items": [
+                    "Holiday Gifts",
+                    "Birthday Gifts",
+                    "Anniversary Gifts"
+                ]
+            },
+            {
+                "name": "Party Supplies",
+                "items": []
+            },
+            {
+                "name": "Party Supplies",
+                "items": [
+                    "Decorations",
+                    "Tableware",
+                    "Party Favors"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "img": "https://i.ibb.co/L90VDx0/HEMA-2024-categoryslider-280x280-wk41-42-dbo-nieuw.webp",
+        "title": "New Arrivals",
+        "subtitles": [
+            {
+                "name": "Fashion",
+                "items": []
+            },
+            {
+                "name": "Fashion",
+                "items": [
+                    "Seasonal Styles",
+                    "Essentials",
+                    "Accessories"
+                ]
+            },
+            {
+                "name": "Home Decor",
+                "items": []
+            },
+            {
+                "name": "Home Decor",
+                "items": [
+                    "Furniture",
+                    "Decorative Pieces",
+                    "Wall Art"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "img": "https://i.ibb.co/ByGdNr4/HEMA-2024-categoryslider-280x280-wk1718-educatiefspeelgoed.webp",
+        "title": "Educational Toys",
+        "subtitles": [
+            {
+                "name": "Learning Toys",
+                "items": []
+            },
+            {
+                "name": "Learning Toys",
+                "items": [
+                    "Alphabet Blocks",
+                    "Math Games",
+                    "Science Kits"
+                ]
+            },
+            {
+                "name": "Creative Play",
+                "items": []
+            },
+            {
+                "name": "Creative Play",
+                "items": [
+                    "Art Supplies",
+                    "Craft Kits",
+                    "Building Blocks"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "img": "https://i.ibb.co/LNKWHbW/HEMA-2024-categoryslider-280x280-wk1718-kaletaart.webp",
+        "title": "Baking Supplies",
+        "subtitles": [
+            {
+                "name": "Ingredients",
+                "items": []
+            },
+            {
+                "name": "Ingredients",
+                "items": [
+                    "Flour",
+                    "Sugar",
+                    "Chocolate Chips"
+                ]
+            },
+            {
+                "name": "Bakeware",
+                "items": []
+            },
+            {
+                "name": "Bakeware",
+                "items": [
+                    "Cake Pans",
+                    "Muffin Trays",
+                    "Cookie Sheets"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "img": "https://i.ibb.co/FXDjRzP/HEMA-2024-categoryslider-280x280-wk3738-dameskleding.webp",
+        "title": "Women's Clothing",
+        "subtitles": [
+            {
+                "name": "Tops",
+                "items": []
+            },
+            {
+                "name": "Tops",
+                "items": [
+                    "Blouses",
+                    "T-Shirts",
+                    "Sweaters"
+                ]
+            },
+            {
+                "name": "Bottoms",
+                "items": []
+            },
+            {
+                "name": "Bottoms",
+                "items": [
+                    "Jeans",
+                    "Skirts",
+                    "Shorts"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "img": "https://i.ibb.co/0sTvVvN/HEMA-2024-categoryslider-280x280-wk3940-jongenmeisje.webp",
+        "title": "Kids' Clothing",
+        "subtitles": [
+            {
+                "name": "Tops",
+                "items": []
+            },
+            {
+                "name": "Tops",
+                "items": [
+                    "T-Shirts",
+                    "Sweaters",
+                    "Jackets"
+                ]
+            },
+            {
+                "name": "Bottoms",
+                "items": []
+            },
+            {
+                "name": "Bottoms",
+                "items": [
+                    "Jeans",
+                    "Leggings",
+                    "Shorts"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "img": "https://i.ibb.co/KWxHZzv/HEMA-2024-categoryslider-280x280-wk3940-kleding.webp",
+        "title": "Men's Clothing",
+        "subtitles": [
+            {
+                "name": "Tops",
+                "items": []
+            },
+            {
+                "name": "Tops",
+                "items": [
+                    "Shirts",
+                    "Sweatshirts",
+                    "Jackets"
+                ]
+            },
+            {
+                "name": "Bottoms",
+                "items": []
+            },
+            {
+                "name": "Bottoms",
+                "items": [
+                    "Jeans",
+                    "Shorts",
+                    "Trousers"
+                ]
+            }
+        ]
+    }
+]

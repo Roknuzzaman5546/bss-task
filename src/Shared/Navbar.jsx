@@ -1,19 +1,3 @@
-// import categoryImg1 from '../../assets/category/download.jpeg';
-import categoryImg2 from '../assets/category/HEMA-2024-inspiratie-800x800-wk3738-jassen2.webp';
-// import categoryImg3 from '../../assets/category/HEMA-2024-categoryslider-280x280-wk3940-jongenmeisje.webp';
-// import categoryImg4 from '../../assets/category/HEMA-2024-categoryslider-280x280-wk3738-dameskleding.webp';
-// import categoryImg5 from '../../assets/category/HEMA-2024-categoryslider-280x280-wk3940-kleding.webp';
-// import categoryImg6 from '../../assets/category/HEMA-2024-categoryslider-280x280-wk41-42-dbo-nieuw.webp';
-// import categoryImg7 from '../../assets/category/HEMA-2024-categoryslider-280x280-wk1718-kaletaart.webp';
-// import categoryImg8 from '../../assets/category/HEMA-2023-categoryslider-280x280-wk22-vrije-tijd-1.webp';
-// import categoryImg9 from '../../assets/category/HEMA-2024-categoryslider-280x280-keuken.webp';
-// import categoryImg10 from '../../assets/category/HEMA-2024-categoryslider-280x280-wk37-cadeaus-feest.webp';
-// import categoryImg11 from '../../assets/category/HEMA-2024-categoryslider-280x280-wk09-makeup.webp';
-// import categoryImg12 from '../../assets/category/HEMA-2024-categoryslider-280x280-wk1718-educatiefspeelgoed.webp';
-// import categoryImg13 from '../../assets/category/HEMA-2023-categoryslider-280x280-wk24-foto.webp';
-// import categoryImg14 from '../../assets/category/HEMA-2024-categoryslider-280x280-vriendenprijsjes.webp';
-// import categoryImg15 from '../../assets/category/HEMA-categoryslider-2023-280x280-aanbiedingen.webp';
-// import categoryImg16 from '../../assets/category/HEMA-categoryslider-2023-280x280-nieuw.webp';
 import { FaRegUser } from 'react-icons/fa';
 import logo from '../assets/logo/logo.svg'
 import love from '../assets/icon/love.png'
@@ -21,9 +5,9 @@ import './Navbar.css'
 import { BsHandbag } from 'react-icons/bs';
 import { HiOutlineBars3 } from 'react-icons/hi2';
 import { LuSearch } from 'react-icons/lu';
-import { IoIosArrowDown, IoIosArrowForward } from 'react-icons/io';
 import { useEffect, useState } from 'react';
 import { FiSearch } from 'react-icons/fi';
+import NavCategory from './NavCategory';
 
 const Navbar = () => {
     const [isNavbarJumping, setIsNavbarJumping] = useState(false);
@@ -67,42 +51,8 @@ const Navbar = () => {
                         <div className='flex items-center '>
                             <img className='mr-[102px]' src={logo} height={56} width={56} alt="" />
                         </div>
-                        <div className=' group cursor-pointer'>
-                            <div className={`lg:flex md:hidden hidden justify-between items-center gap-2 mr-[33px] overflow-hidden z-10 h-[88px]`}>
-                                <HiOutlineBars3 className='text-[25px] font-bold text-[#292929]' />
-                                <h2 className='font-semibold text-sm text-[#323232]'>categorieën</h2>
-                                <IoIosArrowDown className='text-[#323232] transition-transform duration-500 group-hover:rotate-180' />
-                            </div>
-                            <div className={`bottom-0 left-0 ${isNavbarJumping ? 'top-[88px]' : 'top-[130px]'} w-full bg-white transition-transform duration-700 transform scale-y-0 group-hover:scale-y-100 origin-top h-[450px] absolute`}>
-                                <div className="max-w-[1280px] mx-auto px-12 ">
-                                    <div className='border-t-2 flex justify-between items-start'>
-                                        <div className=' border-r-2 w-[33.33%]'>
-                                            <h2 className='font-bold font-hurme leading-5 pt-4 pb-6'>categorieën</h2>
-                                            <div className=' flex justify-between items-center gap-7 hover:bg-[#efefef]'>
-                                                <div className=' w-full flex justify-start items-center gap-7'>
-                                                    <img src={categoryImg2} width={39} height={39} className=' rounded-full' alt="" />
-                                                    <p className=' w-full border-b -mb-4 pb-4 font-sans mr-4'>sinterklass</p>
-                                                </div>
-                                                <div>
-                                                    <IoIosArrowForward></IoIosArrowForward>
-                                                </div>
-                                            </div>
-                                            <div className=' flex justify-start items-center gap-7 mt-7'>
-                                                <img src={categoryImg2} width={39} height={39} className=' rounded-full' alt="" />
-                                                <p>Karest</p>
-                                            </div>
-                                        </div>
-                                        <div className=' border-r-2 w-[33.33%]'>
-
-                                        </div>
-                                        <div className=' border-r-2 w-[33.33%]'>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                        {/* category part  import from navCategory component */}
+                        <NavCategory isNavbarJumping={isNavbarJumping}></NavCategory>
                         <div className='flex justify-center items-center w-full mr-[55px]'>
                             <input type="text" placeholder='Waar be je naar op Zoak?' className='rounded-3xl h-[44px] w-full outline-0 ring-0 bg-[#efefef] hover:bg-[#dfdfdf] py-3 px-6 placeholder:text-[#767676] placeholder:lowercase placeholder:font-hurme font-hurme placeholder:text-[16px] placeholder:leading-5 placeholder:font-normal transition-colors duration-700' />
                             <LuSearch className='-ml-11 text-[21px] font-semibold' />
