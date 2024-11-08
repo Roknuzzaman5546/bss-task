@@ -3,6 +3,7 @@ import categoryImg2 from '../assets/category/HEMA-2024-inspiratie-800x800-wk3738
 import { IoIosArrowDown, IoIosArrowForward } from 'react-icons/io';
 import './Navbar.css'
 import { useEffect, useState } from 'react';
+
 const NavCategory = ({ isNavbarJumping }) => {
     const [categoryData, setCategoryData] = useState([]);
 
@@ -22,10 +23,10 @@ const NavCategory = ({ isNavbarJumping }) => {
                     <IoIosArrowDown className='text-[#323232] transition-transform duration-500 group-hover:rotate-180' />
                 </div>
                 {/* category dropdown */}
-                <div className={`bottom-0 left-0 ${isNavbarJumping ? 'top-[88px]' : 'top-[130px]'} w-full bg-white transition-transform duration-700 transform scale-y-0 group-hover:scale-y-100 origin-top h-svh absolute`}>
+                <div className={`bottom-0 left-0 ${isNavbarJumping ? 'top-[88px]' : 'top-[130px]'} w-full bg-white transition-transform duration-700 transform scale-y-0 group-hover:scale-y-100 origin-top h-svh absolute overflow-y-auto`}>
                     <div className="max-w-[1280px] mx-auto px-12 relative">
                         <div className='border-t-2 flex justify-between items-start'>
-                            <div className=' border-r-2 w-[33.33%] overflow-y-auto'>
+                            <div className=' border-r-2 w-[33.33%]'>
                                 <h2 className='font-bold font-hurme leading-5 pt-4 pb-6'>categorieën</h2>
                                 {
                                     categoryData.map((category) => (
