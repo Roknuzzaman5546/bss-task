@@ -14,7 +14,7 @@ const Navbar = () => {
     const [isNavbarJumping, setIsNavbarJumping] = useState(false);
     const [isSearchClick, setIsSearchClick] = useState(false);
     const [isNavCategoryHovered, setIsNavCategoryHovered] = useState(false);
-    console.log(isNavCategoryHovered)
+    console.log(isSearchClick)
     // for jumping effect
     useEffect(() => {
         const handleScroll = () => {
@@ -82,9 +82,9 @@ const Navbar = () => {
                                 onHoverEnd={() => setIsNavCategoryHovered(false)}
                             ></NavCategory>
 
-                            <div 
-                            onClick={() => setIsSearchClick(!isSearchClick)} 
-                            className='toggle-button flex justify-center items-center w-full mr-[55px]'>
+                            <div
+                                onClick={() => setIsSearchClick(!isSearchClick)}
+                                className='toggle-button flex justify-center items-center w-full mr-[55px]'>
                                 <input type="text" placeholder='Waar be je naar op Zoak?' className='rounded-3xl h-[44px] w-full outline-0 ring-0 bg-[#efefef] hover:bg-[#dfdfdf] py-3 px-6 placeholder:text-[#767676] placeholder:lowercase placeholder:font-hurme font-hurme placeholder:text-[16px] placeholder:leading-5 placeholder:font-normal transition-colors duration-700' />
                                 <LuSearch className='-ml-11 text-[21px] font-semibold' />
                             </div>
@@ -110,15 +110,18 @@ const Navbar = () => {
                 {/* for mobile device */}
                 <div className='md:hidden block'>
                     {/* down menu */}
-                    <NavMobile isNavbarJumping={isNavbarJumping} logo={logo} />
+                    <NavMobile
+                        isNavbarJumping={isNavbarJumping}
+                        logo={logo} isSearchClick={isSearchClick}
+                        />
                 </div>
             </div>
             {/* SearchBar import from NavSearchBar */}
-            <NavSearchBar 
-            isSearchClick={isSearchClick} 
-            setIsSearchClick={setIsSearchClick} 
-            logo={logo} 
-            isNavbarJumping={isNavbarJumping}
+            <NavSearchBar
+                isSearchClick={isSearchClick}
+                setIsSearchClick={setIsSearchClick}
+                logo={logo}
+                isNavbarJumping={isNavbarJumping}
             />
         </>
     );
