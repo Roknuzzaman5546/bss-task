@@ -3,7 +3,7 @@ import { IoIosArrowDown, IoIosArrowForward } from 'react-icons/io';
 import './Navbar.css'
 import { useEffect, useState } from 'react';
 
-const NavCategory = ({ isNavbarJumping }) => {
+const NavCategory = ({ isNavbarJumping, onHoverStart, onHoverEnd }) => {
     const [categoryData, setCategoryData] = useState([]);
 
     useEffect(() => {
@@ -14,7 +14,7 @@ const NavCategory = ({ isNavbarJumping }) => {
 
 
     return (
-        <div>
+        <div onMouseEnter={onHoverStart} onMouseLeave={onHoverEnd}>
             <div className=' group cursor-pointer'>
                 <div className={`lg:flex md:hidden hidden justify-between items-center gap-2 mr-[33px] overflow-hidden z-10 xl:h-[58px] lg:h-[88px] md:h-[88px] h-[88px]`}>
                     <HiOutlineBars3 className='text-[25px] font-bold text-[#292929]' />

@@ -11,6 +11,8 @@ import NavMobile from './NavMobile';
 
 const Navbar = () => {
     const [isNavbarJumping, setIsNavbarJumping] = useState(false);
+    const [isNavCategoryHovered, setIsNavCategoryHovered] = useState(false);
+    console.log(isNavCategoryHovered)
     // for jumping effect
     useEffect(() => {
         const handleScroll = () => {
@@ -25,13 +27,14 @@ const Navbar = () => {
     }, []);
 
 
+
     return (
         <div className={`w-full sticky top-0 left-0 right-0 bg-white mx-auto transition-all duration-500 ease-in-out z-[310] ${isNavbarJumping ? "shadow-md" : "transition-all duration-300 ease-in-out"}`}>
-            {/* for destop & tab device */}
+            {/* for desktop & tab device */}
             <div className={`md:block hidden relative`}>
                 {/* Upper menu */}
-                <div className={`max-w-[1280px] mx-auto custom-range:px-12 px-5 pt-[12px] ${isNavbarJumping ? "h-0 opacity-0 hidden transition-all duration-300 ease-in-out" : "h-auto opacity-100"}`}>
-                    <div className=' border-b border-[#f5f5f5] lg:flex md:hidden hidden justify-between items-center pb-[10px]'>
+                <div className={`max-w-[1280px] mx-auto custom-range:px-12 px-5 pt-[12px] ${isNavbarJumping ? "h-0 opacity-0 hidden transition-all duration-300 ease-in-out" : "h-auto opacity-100"} ${isNavCategoryHovered ? " bg-[#8b8b8b] opacity-90" : "opacity-100"}`}>
+                    <div className={`${isNavCategoryHovered ? 'border-0' : ' border-b'} border-[#f5f5f5] lg:flex md:hidden hidden justify-between items-center pb-[10px]`}>
                         <div className="flex items-center">
                             <a className="navAfter relative font-semibold mr-6 text-[#323232] text-[13px] font-sans cursor-pointer">fotoservice</a>
                             <a className="navAfter relative font-semibold mr-6 text-[#323232] text-[13px] font-sans cursor-pointer">tickets & deals</a>
@@ -52,7 +55,12 @@ const Navbar = () => {
                             <img className='mr-[102px]' src={logo} height={56} width={56} alt="" />
                         </div>
                         {/* category part  import from navCategory component */}
-                        <NavCategory isNavbarJumping={isNavbarJumping}></NavCategory>
+                        <NavCategory
+                            isNavbarJumping={isNavbarJumping}
+                            onHoverStart={() => setIsNavCategoryHovered(true)}
+                            onHoverEnd={() => setIsNavCategoryHovered(false)}
+                        ></NavCategory>
+
                         <div className='flex justify-center items-center w-full mr-[55px]'>
                             <input type="text" placeholder='Waar be je naar op Zoak?' className='rounded-3xl h-[44px] w-full outline-0 ring-0 bg-[#efefef] hover:bg-[#dfdfdf] py-3 px-6 placeholder:text-[#767676] placeholder:lowercase placeholder:font-hurme font-hurme placeholder:text-[16px] placeholder:leading-5 placeholder:font-normal transition-colors duration-700' />
                             <LuSearch className='-ml-11 text-[21px] font-semibold' />
