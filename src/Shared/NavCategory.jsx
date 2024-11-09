@@ -29,7 +29,7 @@ const NavCategory = ({ isNavbarJumping }) => {
                                 <h2 className='font-bold font-hurme leading-5 pt-4 pb-6'>categorieën</h2>
                                 {
                                     categoryData.map((category) => (
-                                        <div key={category.id} className='hover:bg-[#efefef] category'>
+                                        <div key={category?.id} className='hover:bg-[#efefef] category'>
                                             <div className='flex justify-between items-center gap-7 px-2'>
                                                 <img src={category?.img} width={39} height={39} className=' rounded-full' alt="" />
                                                 <div className=' w-full flex justify-start items-center py-4 gap-7 border-b'>
@@ -40,8 +40,8 @@ const NavCategory = ({ isNavbarJumping }) => {
                                             <div className='category-info absolute left-[365px] top-0 w-[33.33%] border-r-2'>
                                                 <h2 className='font-bold font-hurme leading-5 pt-4 pb-6 pl-5'>{category?.title}</h2>
                                                 {
-                                                    category?.subtitles.map((sub) => (
-                                                        <div key={category.id} className='hover:bg-[#efefef] pl-5 mt-[1px] category'>
+                                                    category?.subtitles.map((sub, idx) => (
+                                                        <div key={idx} className='hover:bg-[#efefef] pl-5 mt-[1px] category'>
                                                             <div className=' w-full flex justify-start items-center py-4 gap-5 border-t pr-3'>
                                                                 <p className=' w-full font-sans'>{sub?.name}</p>
                                                                 <IoIosArrowForward></IoIosArrowForward>
