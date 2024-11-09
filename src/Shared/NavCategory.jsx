@@ -37,7 +37,7 @@ const NavCategory = ({ isNavbarJumping }) => {
                                                     <IoIosArrowForward></IoIosArrowForward>
                                                 </div>
                                             </div>
-                                            <div className='category-info absolute left-[365px] top-0 w-[33.33%] border-r-2'>
+                                            <div className='category-info absolute xl:left-[33.85%] lg:left-[34.90%] md:left-[34.50%] left-0 top-0 w-[33.33%] border-r-2'>
                                                 <h2 className='font-bold font-hurme leading-5 pt-4 pb-6 pl-5'>{category?.title}</h2>
                                                 {
                                                     category?.subtitles.map((sub, idx) => (
@@ -48,7 +48,7 @@ const NavCategory = ({ isNavbarJumping }) => {
                                                             </div>
                                                             {
                                                                 sub?.items &&
-                                                                    <div className='absolute left-[345px] w-[275px] top-0 category-info'>
+                                                                    <div className='absolute xl:left-[97.95%] lg:left-[97.90%] md:left-[97.50%] left-0 w-[275px] top-0 category-info'>
                                                                         <h2 className='font-bold font-hurme leading-5 pt-4 pb-6 pl-5'>{sub?.name}</h2>
                                                                         {
                                                                             sub?.items.map((item, idx) => (
