@@ -14,7 +14,7 @@ import { IoLocationOutline } from 'react-icons/io5';
 
 const NavMobile = ({ isNavbarJumping, logo }) => {
     const [isDrawerOpen, setIsDrawerOpen] = useState(true);
-    const [isSearchClickMob, setIsSearchClickMob] = useState(false);
+    // const [isSearchClickMob, setIsSearchClickMob] = useState(false);
     const [categoryData, setCategoryData] = useState([]);
 
     useEffect(() => {
@@ -23,22 +23,22 @@ const NavMobile = ({ isNavbarJumping, logo }) => {
             .then(data => setCategoryData(data));
     }, [categoryData]);
 
-    useEffect(() => {
-        const handleClickOutside = (e) => {
-            // Check if the click is outside the sidebar or the toggle button
-            const sidebar = document.querySelector(".side_bar");
-            const toggleButton = document.querySelector(".toggle-button");
-            if (sidebar && !sidebar.contains(e.target) && !toggleButton.contains(e.target)) {
-                setIsSearchClickMob(false);
-            }
-        };
-        // Add the click event listener
-        document.addEventListener("click", handleClickOutside);
-        // Cleanup the event listener on component unmount
-        return () => {
-            document.removeEventListener("click", handleClickOutside);
-        };
-    }, []);
+    // useEffect(() => {
+    //     const handleClickOutside = (e) => {
+    //         // Check if the click is outside the sidebar or the toggle button
+    //         const sidebar = document.querySelector(".side_bar");
+    //         const toggleButton = document.querySelector(".toggle-button");
+    //         if (sidebar && !sidebar.contains(e.target) && !toggleButton.contains(e.target)) {
+    //             setIsSearchClickMob(false);
+    //         }
+    //     };
+    //     // Add the click event listener
+    //     document.addEventListener("click", handleClickOutside);
+    //     // Cleanup the event listener on component unmount
+    //     return () => {
+    //         document.removeEventListener("click", handleClickOutside);
+    //     };
+    // }, []);
 
     return (
         <div>
@@ -145,7 +145,7 @@ const NavMobile = ({ isNavbarJumping, logo }) => {
                 </div>
             </div>
             <div
-                onClick={() => setIsSearchClickMob(!isSearchClickMob)}
+                // onClick={() => setIsSearchClickMob(!isSearchClickMob)}
                 className={`${isDrawerOpen ? ' relative w-11/12 mx-auto' : 'hidden'} toggle-button`}>
                 <input type="text" name="" id="" placeholder='Waar be je naar op Zoak?' className=' rounded-3xl h-[44px] w-full outline-0 ring-0 bg-[#efefef] hover:bg-[#dfdfdf] py-3 px-6 placeholder:text-[#767676] placeholder:text-sm transition-colors duration-700' />
                 <LuSearch className='text-xl absolute top-[29%] right-4' />
@@ -153,8 +153,7 @@ const NavMobile = ({ isNavbarJumping, logo }) => {
 
 
             {/* Mobile Searchbar box */}
-            <div className={`side_bar 
-            ${isSearchClickMob ? '-mt-[8px]' : '-mt-[700px]'}
+            {/* <div className={`side_bar  ${isSearchClickMob ? '-mt-[8px]' : '-mt-[700px]'}
                      w-full bg-white transition-all duration-500 ease-in-out z-[310] pt-[18.5px] fixed h-full`}>
                 <div className=' max-w-[1280px] mx-auto custom-range:px-12 px-5'>
                     <div className=' flex justify-between items-center'>
@@ -183,7 +182,7 @@ const NavMobile = ({ isNavbarJumping, logo }) => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>  */}
         </div>
     );
 };
