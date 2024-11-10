@@ -84,7 +84,7 @@ const NavMobile = ({ isNavbarJumping, logo }) => {
                                             </div>
                                         </label>
                                     </div>
-                                    <div className='h-screen overflow-y-auto pt-2'>
+                                    <div className='h-screen overflow-y-auto pt-20'>
                                         {
                                             categoryData.map((category) => (
                                                 <div key={category?.id} className='hover:bg-[#efefef] category px-5'>

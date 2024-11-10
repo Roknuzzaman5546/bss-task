@@ -1,190 +1,93 @@
 [
     {
-        "id": 1,
-        "img": "https://i.ibb.co/ZThQzZM/HEMA-2024-categoryslider-280x280-keuken.webp",
-        "title": "Kitchen Essentials",
+        "id": 10,
+        "img": "https://i.ibb.co/KWxHZzv/HEMA-2024-categoryslider-280x280-wk3940-kleding.webp",
+        "title": "Men's ",
         "subtitles": [
             {
-                "name": "Cookware",
+                "name": "Tops",
                 "items": []
             },
             {
-                "name": "Cookware",
+                "name": "Tops",
                 "items": [
-                    "Pots",
-                    "Pans",
-                    "Skillets",
-                    "Woks",
-                    "Woks"
+                    "Shirts",
+                    "Sweatshirts",
+                    "Jackets"
                 ]
             },
             {
-                "name": "Utensils",
+                "name": "Bottoms",
                 "items": []
             },
             {
-                "name": "Utensils",
+                "name": "Bottoms",
                 "items": [
-                    "Spoons",
-                    "Knives",
-                    "Spatulas",
-                    "Tongs",
-                    "Spatulas"
+                    "Jeans",
+                    "Shorts",
+                    "Trousers"
                 ]
             }
         ]
     },
     {
-        "id": 2,
-        "img": "https://i.ibb.co/0ch4Cxw/HEMA-2024-categoryslider-280x280-vriendenprijsjes.webp",
-        "title": "Special Friend Discounts",
+        "id": 9,
+        "img": "https://i.ibb.co/0sTvVvN/HEMA-2024-categoryslider-280x280-wk3940-jongenmeisje.webp",
+        "title": "Kids",
         "subtitles": [
             {
-                "name": "Member Exclusives",
+                "name": "Tops",
                 "items": []
             },
             {
-                "name": "Member Exclusives",
+                "name": "Tops",
                 "items": [
-                    "Apparel Discounts",
-                    "Home Goods",
-                    "Seasonal Specials"
+                    "T-Shirts",
+                    "Sweaters",
+                    "Jackets"
                 ]
             },
             {
-                "name": "Events",
+                "name": "Bottoms",
                 "items": []
             },
             {
-                "name": "Events",
+                "name": "Bottoms",
                 "items": [
-                    "Workshops",
-                    "Meetups",
-                    "Product Launches"
+                    "Jeans",
+                    "Leggings",
+                    "Shorts"
                 ]
             }
         ]
     },
     {
-        "id": 3,
-        "img": "https://i.ibb.co/zJqJ2zm/HEMA-2024-categoryslider-280x280-wk09-makeup.webp",
-        "title": "Beauty & Makeup",
+        "id": 8,
+        "img": "https://i.ibb.co/FXDjRzP/HEMA-2024-categoryslider-280x280-wk3738-dameskleding.webp",
+        "title": "Women's ",
         "subtitles": [
             {
-                "name": "Face Makeup",
+                "name": "Tops",
                 "items": []
             },
             {
-                "name": "Face Makeup",
+                "name": "Tops",
                 "items": [
-                    "Foundations",
-                    "Concealers",
-                    "Blushes"
+                    "Blouses",
+                    "T-Shirts",
+                    "Sweaters"
                 ]
             },
             {
-                "name": "Eye Makeup",
+                "name": "Bottoms",
                 "items": []
             },
             {
-                "name": "Eye Makeup",
+                "name": "Bottoms",
                 "items": [
-                    "Mascaras",
-                    "Eyeshadows",
-                    "Eyeliner"
-                ]
-            }
-        ]
-    },
-    {
-        "id": 4,
-        "img": "https://i.ibb.co/tM7DBrT/HEMA-2024-categoryslider-280x280-wk37-cadeaus-feest.webp",
-        "title": "Gifts & Celebrations",
-        "subtitles": [
-            {
-                "name": "Gift Sets",
-                "items": []
-            },
-            {
-                "name": "Gift Sets",
-                "items": [
-                    "Holiday Gifts",
-                    "Birthday Gifts",
-                    "Anniversary Gifts"
-                ]
-            },
-            {
-                "name": "Party Supplies",
-                "items": []
-            },
-            {
-                "name": "Party Supplies",
-                "items": [
-                    "Decorations",
-                    "Tableware",
-                    "Party Favors"
-                ]
-            }
-        ]
-    },
-    {
-        "id": 5,
-        "img": "https://i.ibb.co/L90VDx0/HEMA-2024-categoryslider-280x280-wk41-42-dbo-nieuw.webp",
-        "title": "New Arrivals",
-        "subtitles": [
-            {
-                "name": "Fashion",
-                "items": []
-            },
-            {
-                "name": "Fashion",
-                "items": [
-                    "Seasonal Styles",
-                    "Essentials",
-                    "Accessories"
-                ]
-            },
-            {
-                "name": "Home Decor",
-                "items": []
-            },
-            {
-                "name": "Home Decor",
-                "items": [
-                    "Furniture",
-                    "Decorative Pieces",
-                    "Wall Art"
-                ]
-            }
-        ]
-    },
-    {
-        "id": 6,
-        "img": "https://i.ibb.co/ByGdNr4/HEMA-2024-categoryslider-280x280-wk1718-educatiefspeelgoed.webp",
-        "title": "Educational Toys",
-        "subtitles": [
-            {
-                "name": "Learning Toys",
-                "items": []
-            },
-            {
-                "name": "Learning Toys",
-                "items": [
-                    "Alphabet Blocks",
-                    "Math Games",
-                    "Science Kits"
-                ]
-            },
-            {
-                "name": "Creative Play",
-                "items": []
-            },
-            {
-                "name": "Creative Play",
-                "items": [
-                    "Art Supplies",
-                    "Craft Kits",
-                    "Building Blocks"
+                    "Jeans",
+                    "Skirts",
+                    "Shorts"
                 ]
             }
         ]
@@ -221,94 +124,191 @@
         ]
     },
     {
-        "id": 8,
-        "img": "https://i.ibb.co/FXDjRzP/HEMA-2024-categoryslider-280x280-wk3738-dameskleding.webp",
-        "title": "Women's Clothing",
+        "id": 6,
+        "img": "https://i.ibb.co/ByGdNr4/HEMA-2024-categoryslider-280x280-wk1718-educatiefspeelgoed.webp",
+        "title": "Toys",
         "subtitles": [
             {
-                "name": "Tops",
+                "name": "Learning Toys",
                 "items": []
             },
             {
-                "name": "Tops",
+                "name": "Learning Toys",
                 "items": [
-                    "Blouses",
-                    "T-Shirts",
-                    "Sweaters"
+                    "Alphabet Blocks",
+                    "Math Games",
+                    "Science Kits"
                 ]
             },
             {
-                "name": "Bottoms",
+                "name": "Creative Play",
                 "items": []
             },
             {
-                "name": "Bottoms",
+                "name": "Creative Play",
                 "items": [
-                    "Jeans",
-                    "Skirts",
-                    "Shorts"
+                    "Art Supplies",
+                    "Craft Kits",
+                    "Building Blocks"
                 ]
             }
         ]
     },
     {
-        "id": 9,
-        "img": "https://i.ibb.co/0sTvVvN/HEMA-2024-categoryslider-280x280-wk3940-jongenmeisje.webp",
-        "title": "Kids' Clothing",
+        "id": 5,
+        "img": "https://i.ibb.co/L90VDx0/HEMA-2024-categoryslider-280x280-wk41-42-dbo-nieuw.webp",
+        "title": "New Arrivals",
         "subtitles": [
             {
-                "name": "Tops",
+                "name": "Fashion",
                 "items": []
             },
             {
-                "name": "Tops",
+                "name": "Fashion",
                 "items": [
-                    "T-Shirts",
-                    "Sweaters",
-                    "Jackets"
+                    "Seasonal Styles",
+                    "Essentials",
+                    "Accessories"
                 ]
             },
             {
-                "name": "Bottoms",
+                "name": "Home Decor",
                 "items": []
             },
             {
-                "name": "Bottoms",
+                "name": "Home Decor",
                 "items": [
-                    "Jeans",
-                    "Leggings",
-                    "Shorts"
+                    "Furniture",
+                    "Decorative Pieces",
+                    "Wall Art"
                 ]
             }
         ]
     },
     {
-        "id": 10,
-        "img": "https://i.ibb.co/KWxHZzv/HEMA-2024-categoryslider-280x280-wk3940-kleding.webp",
-        "title": "Men's Clothing",
+        "id": 4,
+        "img": "https://i.ibb.co/tM7DBrT/HEMA-2024-categoryslider-280x280-wk37-cadeaus-feest.webp",
+        "title": "Gifts & Celebrations",
         "subtitles": [
             {
-                "name": "Tops",
+                "name": "Gift Sets",
                 "items": []
             },
             {
-                "name": "Tops",
+                "name": "Gift Sets",
                 "items": [
-                    "Shirts",
-                    "Sweatshirts",
-                    "Jackets"
+                    "Holiday Gifts",
+                    "Birthday Gifts",
+                    "Anniversary Gifts"
                 ]
             },
             {
-                "name": "Bottoms",
+                "name": "Party Supplies",
                 "items": []
             },
             {
-                "name": "Bottoms",
+                "name": "Party Supplies",
                 "items": [
-                    "Jeans",
-                    "Shorts",
-                    "Trousers"
+                    "Decorations",
+                    "Tableware",
+                    "Party Favors"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "img": "https://i.ibb.co/zJqJ2zm/HEMA-2024-categoryslider-280x280-wk09-makeup.webp",
+        "title": "Beauty & Makeup",
+        "subtitles": [
+            {
+                "name": "Face Makeup",
+                "items": []
+            },
+            {
+                "name": "Face Makeup",
+                "items": [
+                    "Foundations",
+                    "Concealers",
+                    "Blushes"
+                ]
+            },
+            {
+                "name": "Eye Makeup",
+                "items": []
+            },
+            {
+                "name": "Eye Makeup",
+                "items": [
+                    "Mascaras",
+                    "Eyeshadows",
+                    "Eyeliner"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "img": "https://i.ibb.co/0ch4Cxw/HEMA-2024-categoryslider-280x280-vriendenprijsjes.webp",
+        "title": "Friend",
+        "subtitles": [
+            {
+                "name": "Member Exclusives",
+                "items": []
+            },
+            {
+                "name": "Member Exclusives",
+                "items": [
+                    "Apparel Discounts",
+                    "Home Goods",
+                    "Seasonal Specials"
+                ]
+            },
+            {
+                "name": "Events",
+                "items": []
+            },
+            {
+                "name": "Events",
+                "items": [
+                    "Workshops",
+                    "Meetups",
+                    "Product Launches"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "img": "https://i.ibb.co/ZThQzZM/HEMA-2024-categoryslider-280x280-keuken.webp",
+        "title": "Kitchen",
+        "subtitles": [
+            {
+                "name": "Cookware",
+                "items": []
+            },
+            {
+                "name": "Cookware",
+                "items": [
+                    "Pots",
+                    "Pans",
+                    "Skillets",
+                    "Woks",
+                    "Woks"
+                ]
+            },
+            {
+                "name": "Utensils",
+                "items": []
+            },
+            {
+                "name": "Utensils",
+                "items": [
+                    "Spoons",
+                    "Knives",
+                    "Spatulas",
+                    "Tongs",
+                    "Spatulas"
                 ]
             }
         ]
