@@ -154,7 +154,7 @@ const NavMobile = ({ isNavbarJumping, logo }) => {
 
 
             {/* Mobile Searchbar box */}
-            <div className={` ${isSearchClickMob ? '-mt-[110px]' : '-mt-[700px]'}
+            <div className={` ${isSearchClickMob ? '-mt-[110px]' : '-mt-[1000px]'}
                      w-full bg-white transition-all duration-500 ease-in-out z-[310] pt-[5px] fixed h-full`}>
                 <div className=' max-w-[1280px] mx-auto custom-range:px-12 px-5'>
                     <div className=' flex justify-between items-center py-3'>

@@ -7,7 +7,7 @@ const NavSearchBar = ({ isSearchClick, logo, setIsSearchClick, isNavbarJumping }
             ${isSearchClick ?
                 isNavbarJumping ? '-mt-[83px]'
                     : '-mt-[125px]' : '-mt-[900px]'}
-                     w-full bg-white transition-all duration-500 ease-in-out z-[310] pt-[18.5px] fixed h-[300px]`}>
+                    w-full bg-white transition-all duration-500 ease-in-out z-[310] pt-[18.5px] fixed h-[300px]`}>
             <div className=' max-w-[1280px] mx-auto custom-range:px-12 px-5'>
                 <div className=' flex justify-between items-center'>
                     <div className='flex items-center '>
