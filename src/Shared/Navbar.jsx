@@ -54,23 +54,25 @@ const Navbar = () => {
                 {/* for desktop & tab device */}
                 <div className={`md:block hidden relative`}>
                     {/* Upper menu */}
-                    <div className={`max-w-[1280px] mx-auto custom-range:px-12 px-5 pt-[12px] ${isNavbarJumping ? "h-0 opacity-0 hidden transition-all duration-300 ease-in-out" : "h-auto opacity-100"} ${isNavCategoryHovered ? " bg-[#8b8b8b] opacity-90" : "opacity-100"}`}>
-                        <div className={`${isNavCategoryHovered ? 'border-0' : ' border-b'} border-[#f5f5f5] lg:flex md:hidden hidden justify-between items-center pb-[10px]`}>
-                            <div className="flex items-center">
-                                <a className="navAfter relative font-semibold mr-6 text-[#323232] text-[13px] font-sans cursor-pointer">fotoservice</a>
-                                <a className="navAfter relative font-semibold mr-6 text-[#323232] text-[13px] font-sans cursor-pointer">tickets & deals</a>
-                                <a className="navAfter relative font-semibold mr-6 text-[#323232] text-[13px] font-sans cursor-pointer">verzekeringen</a>
-                                <a className="navAfter relative font-semibold text-[#323232] text-[13px] font-sans cursor-pointer">inspiratie</a>
-                            </div>
-                            <div className="flex items-center">
-                                <a className="navAfter relative mr-6 font-semibold text-[#323232] text-[13px] font-sans cursor-pointer">winkels</a>
-                                <a className="navAfter relative mr-6 font-semibold text-[#323232] text-[13px] font-sans  cursor-pointer">oklantenpas</a>
-                                <a className="navAfter relative font-semibold text-[#323232] text-[13px] font-sans cursor-pointer">klantenservice</a>
+                    <div className={`${isNavCategoryHovered ? " bg-[#8b8b8b] opacity-90" : "opacity-100"}`}>
+                        <div className={`max-w-[1280px] mx-auto custom-range:px-12 px-5 pt-[12px] ${isNavbarJumping ? "h-0 opacity-0 hidden transition-all duration-300 ease-in-out" : "h-auto opacity-100"}`}>
+                            <div className={`${isNavCategoryHovered ? 'border-0' : ' border-b'} border-[#f5f5f5] lg:flex md:hidden hidden justify-between items-center pb-[10px]`}>
+                                <div className="flex items-center">
+                                    <a className="navAfter relative font-semibold mr-6 text-[#323232] text-[13px] font-sans cursor-pointer">fotoservice</a>
+                                    <a className="navAfter relative font-semibold mr-6 text-[#323232] text-[13px] font-sans cursor-pointer">tickets & deals</a>
+                                    <a className="navAfter relative font-semibold mr-6 text-[#323232] text-[13px] font-sans cursor-pointer">verzekeringen</a>
+                                    <a className="navAfter relative font-semibold text-[#323232] text-[13px] font-sans cursor-pointer">inspiratie</a>
+                                </div>
+                                <div className="flex items-center">
+                                    <a className="navAfter relative mr-6 font-semibold text-[#323232] text-[13px] font-sans cursor-pointer">winkels</a>
+                                    <a className="navAfter relative mr-6 font-semibold text-[#323232] text-[13px] font-sans  cursor-pointer">oklantenpas</a>
+                                    <a className="navAfter relative font-semibold text-[#323232] text-[13px] font-sans cursor-pointer">klantenservice</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     {/* down menu */}
-                    <div className="w-full ">
+                    <div className="w-full bg-white">
                         <div className={`flex ${isNavbarJumping ? 'xl:py-[16px]' : 'xl:py-[15px]'}  justify-between items-center custom-range:px-12 px-5 max-w-[1280px] mx-auto `}>
                             <div className='flex items-center '>
                                 <img className='mr-[102px]' src={logo} height={56} width={56} alt="" />
@@ -113,7 +115,7 @@ const Navbar = () => {
                     <NavMobile
                         isNavbarJumping={isNavbarJumping}
                         logo={logo} isSearchClick={isSearchClick}
-                        />
+                    />
                 </div>
             </div>
             {/* SearchBar import from NavSearchBar */}
