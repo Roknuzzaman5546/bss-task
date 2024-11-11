@@ -13,7 +13,7 @@ import "react-multi-carousel/lib/styles.css";
 const CardSlide = () => {
     return (
         <div>
-            <div className='max-w-[1350px] bg-[#f5f5f5]  rounded-md mx-auto md:mt-7 mt-20 pt-[38px] pb-32'>
+            <div className='max-w-[1350px] bg-[#f5f5f5]  rounded-md mx-auto md:mt-7 mt-7 pt-[38px] pb-32'>
                 <div className=" md:max-w-screen-2xl w-11/12 flex lg:flex-row md:flex-col-reverse flex-col-reverse justify-between items-center mx-auto">
                     <div className=' lg:w-[47%] md:full w-full lg:pt-0 md:pt-16 pt-0 '>
                         <h2 className=' xl:text-[33px] lg:text-[30px] md:text-[28px] text-[33px] font-extrabold text-[#323232] xl:w-[300px] lg:w-[300px] md:w-[60%] w-full text-justify'>profiteer nu van te gekke acties</h2>
@@ -26,8 +26,7 @@ const CardSlide = () => {
                 </div>
             </div>
             {/* carosul part */}
-            <div className=''>
-                <div className=' md:-mt-20 -mt-116 md:max-w-[1280px] custom-range:px-9 md:px-[10px] mx-auto'>
+                <div className=' -mt-20 md:max-w-[1280px] custom-range:px-9 md:px-[10px] mx-auto'>
                     <Carousel
                         additionalTransfrom={0}
                         arrows
@@ -148,7 +147,6 @@ const CardSlide = () => {
                         </div>
                     </Carousel>
                 </div>
-            </div>
         </div>
     )
 }

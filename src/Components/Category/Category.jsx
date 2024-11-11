@@ -21,7 +21,7 @@ import WithStyles from './WithStyles';
 const Category = () => {
     return (
         <div className='custom-range:px-9 lg:px-[52px] md:px-3'>
-            <div className=' md:mt-[25px] mt-4 max-w-[1280px] mx-auto overflow-visible text-center'>
+            <div className=' md:mt-[25px] mt-5 max-w-[1280px] mx-auto overflow-visible text-center'>
                 <Carousel
                     additionalTransfrom={0}
                     arrows
