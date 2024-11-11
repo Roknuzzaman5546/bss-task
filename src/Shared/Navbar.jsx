@@ -8,7 +8,7 @@ import { LuSearch } from 'react-icons/lu';
 import { useEffect, useState } from 'react';
 import NavCategory from './NavCategory';
 import NavMobile from './NavMobile';
-import NavSearchBar from './NavSearchbar';
+import NavSearchBar from './NavSearchBar';
 
 const Navbar = () => {
     const [isNavbarJumping, setIsNavbarJumping] = useState(false);

@@ -22,33 +22,34 @@ const NavCategory = ({ isNavbarJumping, onHoverStart, onHoverEnd }) => {
                     <IoIosArrowDown className='text-[#323232] transition-transform duration-500 group-hover:rotate-180' />
                 </div>
                 {/* category dropdown */}
-                <div className={`bottom-0 left-0 ${isNavbarJumping ? 'top-[88px]' : 'top-[130px]'} w-full bg-white transition-transform duration-700 transform scale-y-0 group-hover:scale-y-100 origin-top h-screen absolute overflow-y-auto`}>
-                    <div className="max-w-[1280px] mx-auto custom-range:px-12 px-5 relative">
+                <div className={`bottom-0 left-0 ${isNavbarJumping ? 'top-[88px]' : 'top-[130px]'} w-full bg-white transition-transform duration-700 transform scale-y-0 group-hover:scale-y-100 origin-top h-[500px] absolute overflow-y-auto`}>
+                    <div className="max-w-[1280px] mx-auto custom-range:px-12 px-5 relative pb-5">
                         <div className='border-t-2 flex justify-between items-start'>
                             <div className=' border-r-2 w-[33.33%]'>
                                 <h2 className='font-bold font-hurme leading-5 pt-4 pb-6'>categorieën</h2>
                                 {
                                     categoryData.map((category) => (
-                                        <div key={category?.id} className='hover:bg-[#efefef] category'>
+                                        <div key={category?.id} className='hover:bg-[#efefef] transition-colors duration-700 category'>
                                             <div className='flex justify-between items-center gap-7 px-2'>
                                                 <img src={category?.img} width={39} height={39} className=' rounded-full' alt="" />
                                                 <div className=' w-full flex justify-start items-center py-4 gap-7 border-b'>
                                                     <p className=' w-full font-sans'>{category?.title}</p>
-                                                    <IoIosArrowForward></IoIosArrowForward>
-                                                </div>
+                                                    <IoIosArrowForward className=' hidden hover:block'></IoIosArrowForward>
+                                                </div> 
                                             </div>
-                                            <div className='category-info absolute xl:left-[33.85%] lg:left-[34.90%] md:left-[34.50%] left-0 top-0 w-[33.33%] border-r-2'>
+                                            <div className='category-info absolute xl:left-[33.85%] lg:left-[34.70%] md:left-[34.50%] left-0 top-0 w-[33.33%] border-r-2'>
                                                 <h2 className='font-bold font-hurme leading-5 pt-4 pb-6 pl-5'>{category?.title}</h2>
-                                                {
-                                                    category?.subtitles.map((sub, idx) => (
-                                                        <div key={idx} className='hover:bg-[#efefef] pl-5 mt-[1px] category'>
-                                                            <div className=' w-full flex justify-start items-center py-4 gap-5 border-t pr-3'>
-                                                                <p className=' w-full font-sans'>{sub?.name}</p>
-                                                                <IoIosArrowForward></IoIosArrowForward>
-                                                            </div>
-                                                            {
-                                                                sub?.items &&
-                                                                    <div className='absolute xl:left-[97.95%] lg:left-[97.90%] md:left-[97.50%] left-0 w-[275px] top-0 category-info'>
+                                                <div className='mt-[1px] h-[450px]' >
+                                                    {
+                                                        category?.subtitles.map((sub, idx) => (
+                                                            <div key={idx} className='hover:bg-[#efefef] transition-colors duration-300 category'>
+                                                                <div className=' w-full flex justify-start items-center py-4 gap-5 hover:bg-[#efefef] border-t pr-3 pl-5'>
+                                                                    <p className='w-full font-sans'>{sub?.name}</p>
+                                                                        <IoIosArrowForward />
+                                                                </div>
+                                                                {
+                                                                    sub?.items &&
+                                                                    <div className='absolute xl:left-[97.95%] lg:left-[97.90%] md:left-[97.50%] left-0 w-[275px] top-0 category-info h-[450px]'>
                                                                         <h2 className='font-bold font-hurme leading-5 pt-4 pb-6 pl-5'>{sub?.name}</h2>
                                                                         {
                                                                             sub?.items.map((item, idx) => (
@@ -58,10 +59,11 @@ const NavCategory = ({ isNavbarJumping, onHoverStart, onHoverEnd }) => {
                                                                             ))
                                                                         }
                                                                     </div>
-                                                            }
-                                                        </div>
-                                                    ))
-                                                }
+                                                                }
+                                                            </div>
+                                                        ))
+                                                    }
+                                                </div>
                                             </div>
                                         </div>
                                     ))

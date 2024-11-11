@@ -7,7 +7,7 @@ const NavSearchBar = ({ isSearchClick, logo, setIsSearchClick, isNavbarJumping }
             ${isSearchClick ?
                 isNavbarJumping ? '-mt-[83px]'
                     : '-mt-[125px]' : '-mt-[900px]'}
-                    w-full bg-white transition-all duration-500 ease-in-out z-[310] pt-[18.5px] fixed h-[300px]`}>
+                    w-full bg-white transition-all duration-500 ease-in-out z-[310] pt-[18.5px] fixed h-fit`}>
             <div className=' max-w-[1280px] mx-auto custom-range:px-12 px-5'>
                 <div className=' flex justify-between items-center'>
                     <div className='flex items-center '>
@@ -22,7 +22,7 @@ const NavSearchBar = ({ isSearchClick, logo, setIsSearchClick, isNavbarJumping }
                         <FaXmark className=' text-xl'></FaXmark>
                     </div>
                 </div>
-                <div className=' w-2/5 mx-auto mt-12'>
+                <div className=' w-2/5 mx-auto mt-12 pb-10'>
                     <h2 className=' text-lg font-bold font-hurme text-black pb-4'>populair</h2>
                     <div className=' flex justify-start gap-3 hover:bg-[#efefef] rounded-md transition-colors duration-700 cursor-pointer py-2.5 pl-2'>
                         <LuSearch className='text-[21px] font-semibold' />
