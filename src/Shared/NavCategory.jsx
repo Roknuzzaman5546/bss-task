@@ -5,6 +5,8 @@ import { useEffect, useState } from 'react';
 
 const NavCategory = ({ isNavbarJumping, onHoverStart, onHoverEnd }) => {
     const [categoryData, setCategoryData] = useState([]);
+    const [hoveredCategoryId, setHoveredCategoryId] = useState(null);
+    const [hoveredSubCategoryId, setHoveredSubCategoryId] = useState(null);
 
     useEffect(() => {
         fetch('category.json')
@@ -29,23 +31,35 @@ const NavCategory = ({ isNavbarJumping, onHoverStart, onHoverEnd }) => {
                                 <h2 className='font-bold font-hurme leading-5 pt-4 pb-6'>categorieën</h2>
                                 {
                                     categoryData.map((category) => (
-                                        <div key={category?.id} className='hover:bg-[#efefef] transition-colors duration-700 category'>
+                                        <div
+                                            onMouseEnter={() => setHoveredCategoryId(category?.id)}
+                                            onMouseLeave={() => setHoveredCategoryId(null)}
+                                            key={category?.id}
+                                            className='hover:bg-[#efefef] transition-colors duration-700 category'>
                                             <div className='flex justify-between items-center gap-7 px-2'>
                                                 <img src={category?.img} width={39} height={39} className=' rounded-full' alt="" />
                                                 <div className=' w-full flex justify-start items-center py-4 gap-7 border-b'>
                                                     <p className=' w-full font-sans'>{category?.title}</p>
-                                                    <IoIosArrowForward className=' hidden hover:block'></IoIosArrowForward>
-                                                </div> 
+                                                    {hoveredCategoryId === category?.id && (
+                                                        <IoIosArrowForward />
+                                                    )}
+                                                </div>
                                             </div>
                                             <div className='category-info absolute xl:left-[33.85%] lg:left-[34.70%] md:left-[34.50%] left-0 top-0 w-[33.33%] border-r-2'>
                                                 <h2 className='font-bold font-hurme leading-5 pt-4 pb-6 pl-5'>{category?.title}</h2>
                                                 <div className='mt-[1px] h-[450px]' >
                                                     {
                                                         category?.subtitles.map((sub, idx) => (
-                                                            <div key={idx} className='hover:bg-[#efefef] transition-colors duration-300 category'>
+                                                            <div
+                                                                onMouseEnter={() => setHoveredSubCategoryId(idx)}
+                                                                onMouseLeave={() => setHoveredSubCategoryId(null)}
+                                                                key={idx}
+                                                                className='hover:bg-[#efefef] transition-colors duration-300 category'>
                                                                 <div className=' w-full flex justify-start items-center py-4 gap-5 hover:bg-[#efefef] border-t pr-3 pl-5'>
                                                                     <p className='w-full font-sans'>{sub?.name}</p>
+                                                                    {hoveredSubCategoryId === idx && (
                                                                         <IoIosArrowForward />
+                                                                    )}
                                                                 </div>
                                                                 {
                                                                     sub?.items &&
